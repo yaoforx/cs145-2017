@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CS145 - Introduction to Databases (Autumn 2017)</title>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<div class="container">
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">CS145</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#description">Description</a></li>
+              <li><a href="#logistics">Class Logistics</a></li>
+              <li><a href="#lecture">Lecture Plan</a></li>
+              <li><a href="#grading">Grading</a></li>
+              <li class="divider"></li>
+              <li><a href="#staff">Staff</a></li>
+              <li class="divider"></li>
+              <li><a href="#late-policy">Late Policy</a></li>
+              <li><a href="#honor-code">Honor Code</a></li>
+              <li><a href="#disability">Disability</a></li>
+            </ul>
+          </li>
+          <li><a href="#office-hours">Office Hours</a></li>
+          <!-- <li><a href="https://piazza.com/stanford/fall2017/cs145">Piazza</a></li> -->
+          <li><a href="https://piazza.com/stanford/fall2017/cs145">Piazza</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<div class="jumbotron">
+<h1>CS145 Introduction to Databases</h1>
+<h3>NVIDIA Auditorium on TTh 3:00-4:20pm</h3>
+<p class="lead">Chat with us on <a href="https://piazza.com/stanford/fall2017/cs145">the course Piazza site</a> if you have any questions!</p>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Description</div>
+  <div class="panel-body">
+    <a name="description"></a>
+This course covers database design and the use of databases in
+applications, with a short introduction to the internals of relational
+database engines. It includes extensive coverage of the relational
+model, relational algebra, and SQL. The course also features database
+design and relational design principles based on dependencies and
+normal forms. Many additional key database topics from the design and
+application-building perspective are also covered, including indexes, views,
+transactions, and integrity constraints. Systems such as MapReduce
+framework and key-value stores will also be covered. There will be a
+programming project, which explores database design and management in
+web applications by utilizing appropriate features of SQL.
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Class Logistics</div>
+  <div class="panel-body">
+	  <a name="logistics"></a>
+    <p>
+We're excited to once again utilize <i>Jupyter notebooks</i> to allow for more
+interactivity in the class. Installation instructions are available <a href="https://github.com/stanford-futuredata/cs145-2017/blob/master/jupyter_install.md">here</a>.
+Python is used in the in-class activities, homework and projects.
+<br>
+    </p>
+	</div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">Lecture Plan</h2>
+  </div>
+  <div class="panel-body">
+    <a name="lecture"></a>
+    <p>
+The reading material listed below is optional, but it refers to
+<i>Database Systems: The Complete Book</i> by Garcia-Molina, Ullman,
+and Widom. The lecture plan below may change.
+    </p>
+    <p>
+    <hr /> 
+
+<table class="plan">
+  <tbody>
+    <tr>
+      <th>#</th>
+      <th>Date</th>
+      <th>Topic</th>
+      <th>Lecture Materials</th>
+      <th><i>Extra</i> Reading Material</th>
+      <th>Assignments</th>
+    </tr>
+    <tr>
+      <td align="center" colspan="6" class="small-section-header">Introduction and Querying</td>
+    </tr>
+  <tr>
+    <td>1</td>
+    <td>9/26</td>
+    <td>Course Logistics and Database History</td>
+    <td>
+      <a href="lectures/lecture-1/Lecture_1_Intro.pptx">Lecture 1</a> (<a href="lectures/lecture-1/Lecture_1_Intro.pdf">pdf</a>) <br> <br>
+      Activities: <br>
+      <a href="lectures/lecture-1/Activity-1-1.ipynb" download>Activity 1-1</a> <br>
+      <a href="lectures/lecture-1/Activity-1-2.ipynb" download>Activity 1-2</a> <br>
+      <a href="lectures/lecture-1/dataset_1.db" download>Activity db</a> <br>
+      <a href="https://github.com/stanford-futuredata/cs145-2017/blob/master/jupyter_install.md">Jupyter Install Instructions</a> <br>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>9/28</td>
+    <td>SQL: Introduction</td>
+    <td>
+      <a href="lectures/lecture-2-3/Lecture_2_3_SQL.pptx">Lecture 2-3</a> (<a href="lectures/lecture-2-3/Lecture_2_3_SQL.pdf">pdf</a>) <br>
+      <a href="lectures/lecture-2-3/Lecture-2.ipynb" download>Lecture 2 Notebook</a>
+      <br> <br>
+      Activities: <br>
+      <a href="lectures/lecture-2-3/Activity-2-1.ipynb" download>Activity 2-1</a> <a href="lectures/lecture-2-3/Activity-2-1-Solutions.ipynb" download>(soln)</a> <br>
+      <a href="lectures/lecture-2-3/Activity-2-2.ipynb" download>Activity 2-2</a> <a href="lectures/lecture-2-3/Activity-2-2-Solutions.ipynb" download>(soln)</a> <br>
+      <a href="lectures/lecture-2-3/Activity-2-3.ipynb" download>Activity 2-3</a> <a href="lectures/lecture-2-3/Activity-2-3-Solutions.ipynb" download>(soln)</a><br>
+      <a href="lectures/lecture-2-3/dataset_1.db" download>Activity db</a> <br>
+    </td>
+    <td></td>
+    <td>
+      <b>PS 1 Materials:</b> <br>
+      <ul>
+        <li><a href="problemset/PS1/HW1.ipynb" download>PS1 Notebook File</a></li>
+        <li><a href="problemset/PS1/correct_output.txt" download>correct output</a></li>
+        <li><a href="problemset/PS1/sanity_check.py" download>sanity check</a></li>
+        <li><a href="problemset/PS1/submission-instructions.txt" download>submission instructions</a></li>
+        <li><a href="problemset/PS1/submit.py" download>submission template</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>10/3</td>
+    <td>SQL: Advanced</td>
+    <td>
+      <a href="lectures/lecture-2-3/Lecture_2_3_SQL.pptx">Lecture 2-3</a> (<a href="lectures/lecture-2-3/Lecture_2_3_SQL.pdf">pdf</a>) <br>
+      <a href="lectures/lecture-2-3/Lecture-3.ipynb" download>Lecture 3 Notebook</a>
+      <br> <br>
+      Activities: <br>
+      <a href="lectures/lecture-2-3/Activity-3-1.ipynb" download>Activity 3-1</a> <a href="lectures/lecture-2-3/Activity-3-1-Solutions.ipynb" download>(soln)</a> <br>
+      <a href="lectures/lecture-2-3/Activity-3-2.ipynb" download>Activity 3-2</a> <a href="lectures/lecture-2-3/Activity-3-2-Solutions.ipynb" download>(soln)</a> <br>
+      <a href="lectures/lecture-2-3/Activity-3-3.ipynb" download>Activity 3-3</a> <a href="lectures/lecture-2-3/Activity-3-3-Solutions.ipynb" download>(soln)</a> <br>
+      <a href="lectures/lecture-2-3/dataset_1.db" download>Activity db</a> <br>
+    </td>
+    <td>Ch. 6</td>
+    <td></td>
+  </tr>
+      <td align="center" colspan="6" class="small-section-header">Database Design and Normal Forms</td>  
+  <tr>
+    <td>4</td>
+    <td>10/5</td>
+    <td>Database Design: ER Diagrams</td>
+    <td>
+      <a href="lectures/lecture-4/Lecture_4_ER.pptx" download>Lecture 4</a> (<a href="lectures/lecture-4/Lecture_4_ER.pdf">pdf</a>)
+      <br> <br>
+      Activities: <br>
+      <a href="lectures/lecture-4/Activity-4-Solutions.pptx" download>Activity 4</a> <a href="lectures/lecture-4/Activity-4-Solutions.pdf">(pdf)</a> <br>      
+    </td>
+    <td>Ch. 2</td>
+    <td>
+      <b>Project Part 1:</b> <br>
+      <ul>
+        <li><b><a href="projects/project1/project-1-instructions.pdf">Instructions</a></b></li>      
+        <li><a href="projects/project1/bulk-loading.pdf">Bulk Loading Tutorial</a></li>      
+        <li><a href="projects/project1/word-bank.txt">word bank</a></li>      
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>10/10</td>
+    <td>Database Design: Theory 1</td>
+    <td>
+      <a href="lectures/lecture-5-6/Lecture_5_6_DB_Design.pptx" download>Lecture 5-7</a> (<a href="lectures/lecture-5-6/Lecture_5_6_DB_Design.pdf">pdf</a>)
+      <br> <br>
+      Activities: <br>
+      <a href="lectures/lecture-5-6/Activity-5-1.ipynb" download>Activity 5</a> <a href="lectures/lecture-5-6/Activity-5-1-Solutions.ipynb" download> (soln)</a> <br>  
+      <a href="lectures/lecture-5-6/MVDs.ipynb" download>MVDs</a> <br>      
+      <a href="lectures/lecture-5-6/closure.py" download>Closure</a> <br>      
+      <a href="lectures/lecture-5-6/Activity-3NF.ipynb" download>Activity 3NF</a> <br>      
+    </td>
+    <td>Ch 3.2 - 3.7</td>
+    <td>PS 1 Due (before class)</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>10/12</td>
+    <td>Database Design: Theory 2</td>
+    <td>
+      <a href="lectures/lecture-5-6/Lecture_5_6_DB_Design.pptx" download>Lecture 5-7</a> (<a href="lectures/lecture-5-6/Lecture_5_6_DB_Design.pdf">pdf</a>)
+      <br> <br>
+      Activities: <br>
+      <a href="lectures/lecture-5-6/Activity-6-1.ipynb" download>Activity 6-1</a> <a href="lectures/lecture-5-6/Activity-6-1-Solutions.ipynb" download> (soln)</a> <br>  
+      <a href="lectures/lecture-5-6/Activity-6-2.ipynb" download>Activity 6-2</a> <a href="lectures/lecture-5-6/Activity-6-2-Solutions.ipynb" download> (soln)</a> <br>  
+      <a href="lectures/lecture-5-6/MVDs.ipynb" download>MVDs</a> <br>      
+      <a href="lectures/lecture-5-6/closure.py" download>Closure</a> <br>      
+      <a href="lectures/lecture-5-6/Activity-3NF.ipynb" download>Activity 3NF</a> <br>      
+    </td>
+    <td></td>
+    <td>
+      <b>PS 2 Materials:</b> <br>
+      <ul>
+        <li><a href="problemset/PS2/PS2-2017.ipynb" download>PS2 Notebook File</a></li>        
+        <li><a href="problemset/PS2/submit.py" download>Submission Template</a></li>  
+        <li><a href="problemset/PS2/submission_instructions.txt" download>Submission Instructions</a></li>  
+      </ul>
+    </td>
+  </tr>
+      <td align="center" colspan="6" class="small-section-header">Transaction Processing</td>    
+  <tr>
+    <td>7</td>
+    <td>10/17</td>
+    <td>Database Design: Theory 3</td>
+    <td><a href="lectures/lecture-5-6/Lecture_5_6_DB_Design.pptx" download>Lecture 5-7</a> (<a href="lectures/lecture-5-6/Lecture_5_6_DB_Design.pdf">pdf</a>)</td>
+    <td></td>
+    <td>Project Part 1 Due (before class)</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>10/19</td>
+    <td>Transactions: A User's Perspective</td>
+    <td><a href="lectures/lecture-8/Lecture_8_TXNs.pptx" download>Lecture 8 and 11</a> (<a href="lectures/lecture-8/Lecture_8_TXNs.pdf">pdf</a>)</td>
+    <td>Ch 8.6</td>
+    <td></td>
+  </tr>
+<td align="center" colspan="6" class="small-section-header">Midterm</td>      
+  <tr class="exam">
+    <td>9</td>
+    <td>10/24</td>
+    <td>Midterm Review</td>
+    <td><a href="lectures/lecture-9/review.pptx" download>Midterm Review</a> (<a href="lectures/lecture-9/review.pdf">pdf</a>)</td>
+    <td></td>
+    <td>PS 2 Due (before class)</td>
+  </tr>
+  <tr class="exam">
+    <td>10</td>
+    <td>10/26</td>
+    <td>Midterm</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+<td align="center" colspan="6" class="small-section-header">Query Processing and Database Internals</td> 
+  <tr>
+    <td>11</td>
+    <td>10/31</td>
+    <td>Mechanisms for Transactions: Logging and Locking</td>
+    <td>
+      <a href="lectures/lecture-8/Lecture_8_TXNs.pptx" download>Lecture 8 and 11</a> (<a href="lectures/lecture-8/Lecture_8_TXNs.pdf">pdf</a>)
+      <br> <br>
+      Activities: <br>
+      <a href="lectures/lecture-11/Activity-11-1.ipynb" download>Activity 11-1</a> <br>  
+      <a href="lectures/lecture-11/txn_viewer.py" download>txn_viewer.py</a> <br>  
+      <a href="lectures/lecture-11/txnViewer.js" download>txnViewer.js</a> <br>  
+    </td>
+    <td>Ch 18.1-18.4</td>
+    <td>
+      <b>Project Part 2:</b> <br>
+      <ul>
+        <li><b><a href="projects/project2/project-2-instructions-2017.pdf">Instructions</a></b></li>      
+        <li><a href="projects/project2/referential-integrity-2017.pdf">Referential Integrity Tutorial</a></li>      
+        <li><a href="projects/project2/Constraints_and_Triggers.ipynb" download>Constraints and Triggers Activity</a> <a href="projects/project2/Constraints_and_Triggers_Solutions.ipynb" download>(soln)</a></li>      
+      </ul>
+    </td>
+  </tr>      
+  <tr>
+    <td>12</td>
+    <td>11/2</td>
+    <td>I/O Cost Models and External Sort</td>
+    <td>
+      <a href="lectures/lecture-12-13/Lecture_12-13_EMS_Indexes.pptx" download>Lecture 12-13</a> (<a href="lectures/lecture-12-13/Lecture_12-13_EMS_Indexes.pdf">pdf</a>)
+    </td>
+    <td>Ch 11.4</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>11/7</td>
+    <td>Indexing</td>
+    <td>
+      <a href="lectures/lecture-12-13/Lecture_12-13_EMS_Indexes.pptx" download>Lecture 12-13</a> (<a href="lectures/lecture-12-13/Lecture_12-13_EMS_Indexes.pdf">pdf</a>) <br>
+      <a href="lectures/lecture-12-13/Lecture_13_Indexes">Lecture 13 pdf</a>
+      <br> <br>
+      Activities: <br>
+      <a href="lectures/lecture-12-13/Activity-13.ipynb" download>Activity 13</a> <a href="lectures/lecture-12-13/Activity-13-Solutions.ipynb" download>(soln)</a> <br>  
+      <a href="lectures/lecture-12-13/complaint.db" download>db file</a> <br>  
+    </td>
+    <td>Ch 13.1-13.3</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>11/9</td>
+    <td>Access Methods and Operators</td>
+    <td>
+      <a href="lectures/lecture-14-15/Lecture_14_Joins.pptx" download>Lecture 14</a> (<a href="lectures/lecture-14-15/Lecture_14_Joins.pdf">pdf</a>)
+    </td>
+    <td>Ch 15 (except 15.9)</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>11/14</td>
+    <td>Joins</td>
+    <td>
+      <a href="lectures/lecture-14-15/Lecture15_Joins_and_Buffers.pptx" download>Lecture 15</a> (<a href="lectures/lecture-14-15/Lecture15_Joins_and_Buffers.pdf">pdf</a>)
+      <br> <br>
+      Activities: <br>
+      <a href="lectures/lecture-14-15/Activity-15.ipynb" download>Activity 15</a> <br>  
+      <a href="lectures/lecture-14-15/External_Merge_Sort.ipynb" download>External Merge Sort</a> <br>  
+      <a href="lectures/lecture-14-15/compModel.js" download>compModel.js</a> <br>  
+      <a href="lectures/lecture-14-15/display_tools.py" download>display_tools.py</a> <br>  
+      <a href="lectures/lecture-14-15/io_backend.py" download>io_backend.py</a> <br>        
+    </td>
+    <td>Ch 2 and 16.3</td>
+    <td>
+      Project Part 2 Due (before class) <br> 
+      Project Part 3 and Pset 3 Released <br> <br>
+      <b>Project Part 3:</b> <br>
+      <ul>
+        <li><b><a href="projects/project3/part-3-instructions.pdf">Instructions</a></b></li>      
+        <li><a href="projects/project3/web_py.pdf">WebPy Tutorial</a></li>      
+        <li><a href="projects/project3/items-p3.json">Part 3 Items (json)</a></li>      
+      </ul>
+      <b>Pset 3:</b> <br>
+      <ul>
+        <li><b><a href="problemset/PS3/PS3.ipynb" download>PS3 Notebook File</a></b></li>      
+        <li><a href="problemset/PS3/submission_instructions.txt" download>Submission Instructions</a></li>      
+        <li><a href="problemset/PS3/submit.py" download>Submission Template</a></li>      
+        <li><a href="problemset/PS3/nfl.py" download>NFL Data Parser</a></li>
+        <li><a href="problemset/PS3/playercollege.csv" download>College Data</a></li>
+        <li><a href="problemset/PS3/playerteam.csv" download>Team Data</a></li>      
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>11/16</td>
+    <td>Relational Algebra</td>
+    <td>
+      <a href="lectures/lecture-16/Lecture_16_Relational_Algebra.pptx" download>Lecture 16</a> (<a href="lectures/lecture-16/Lecture_16_Relational_Algebra.pdf">pdf</a>)
+      <br> <br>
+      Activities: <br>
+      <a href="lectures/lecture-16/Activity-16-1.ipynb" download>Activity 16-1</a> <br>        
+      <a href="lectures/lecture-16/display_tools.py" download>display_tools.py</a> <br>
+      <a href="lectures/lecture-16/relation_algebra.py" download>relation_algebra.py</a> <br>
+      <a href="lectures/lecture-16/act-16-1.png" download>act-16-1.png</a> <br>
+    </td>
+    <td>Ch 2 and 16.3</td>
+    <td></td>
+  </tr>
+<td align="center" colspan="6" class="small-comment-header">Thanksgiving Recess: 11/20-11/24</td>
+  <tr>
+    <td>17</td>
+    <td>11/28</td>
+    <td>Query Optimization</td>
+    <td>
+      <a href="lectures/lecture-17/Lecture_17_Optimization.pptx" download>Lecture 17</a> (<a href="lectures/lecture-17/Lecture_17_Optimization.pdf">pdf</a>)
+      <br> <br>
+      Activities: <br>
+      <a href="lectures/lecture-17/Activity-17-1.ipynb" download>Activity 17-1</a> <a href="lectures/lecture-17/Activity-17-1-Solutions.ipynb" download>(soln)</a> <br>        
+      <a href="lectures/lecture-17/Activity-17-2.ipynb" download>Activity 17-2</a> <br>        
+      <a href="lectures/lecture-17/display_tools.py" download>display_tools.py</a> <br>
+      <a href="lectures/lecture-17/relation_algebra.py" download>relation_algebra.py</a> <br>
+      <a href="lectures/lecture-17/complaint.db" download>complaint.db</a> <br>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+<td align="center" colspan="6" class="small-section-header">Advanced Topics</td>          
+  <tr>
+    <td>18</td>
+    <td>11/30</td>
+    <td>NoSQL Systems</td>
+    <td>
+      <a href="lectures/lecture-18/rough-notes.txt" download>Lecture 18 Rough Notes</a>
+      <br> <br>
+      Other Materials: <br>
+      <a href="lectures/lecture-18/dataframes-basics.ipynb" download>dataframes-basics.ipynb</a><br>       
+      <a href="lectures/lecture-18/leveldb-basics.ipynb" download>leveldb-basics.ipynb</a><br>       
+      <a href="lectures/lecture-18/mongodb-basics.ipynb" download>mongodb-basics.ipynb</a><br>       
+      <a href="lectures/lecture-18/orm-basics.ipynb" download>orm-basics.ipynb</a><br>       
+      <a href="lectures/lecture-18/redis-basics.ipynb" download>redis-basics.ipynb</a><br>       
+      <a href="lectures/lecture-18/housing.csv" download>housing.csv</a><br>       
+    </td>
+    <td></td>
+    <td>Pset 3 Due (before class)</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>12/5</td>
+    <td>Distributed Data Processing</td>
+    <td>
+      <a href="lectures/lecture-19/Guest_Lecture.pdf"  >Guest Lecture pdf</a>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>12/7</td>
+    <td>Final Exam Review</td>
+    <td>
+      <a href="lectures/lecture-20/final_review.pdf"  >Final Review pdf</a>
+    </td>
+    <td></td>
+    <td>Project Part 3 Due (before class)</td>
+  </tr>
+
+    </table>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Midterm Exam</div>
+  <div class="panel-body">
+    The midterm exam will be on <b>Oct 26th from 3:00pm-4:20pm</b> (during class time).  
+    <!-- The locations will be:
+    <ul>
+      <li>NVIDIA Auditorium - Last Names A-L</li>
+      <li>Hewlett 200 - Last Names M-Z</li>
+    </ul>-->
+  </div>
+</div>
+ 
+<div class="panel panel-default">
+  <div class="panel-heading">Final Exam</div>
+  <div class="panel-body">
+    The final exam will be on <b>December 12th at 3:30pm</b>.
+  </div>
+</div> 
+
+<div class="panel panel-default">
+  <div class="panel-heading">Grading</div>
+  <div class="panel-body">
+    <a name="grading"></a>
+    <table class="table">
+      <tr><td>Problem Sets</td><td>25%</td>
+      <tr><td>Programming Project</td><td>25%</td>
+      <tr><td>Midterm</td><td>20%</td>
+      <tr><td>Final</td><td>30%</td>
+    </table>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Office Hours</div>
+  <div class="panel-body">
+    <a name="office-hours"></a>
+<p>
+Unless otherwise specified in the staff section below, office hours will be
+held in the <strong>open area of the Huang basement</strong>.
+CAs will bring signs to identify themselves.  Please see the staff
+section below for office hours.
+</p>
+<p>
+<b><i>
+Note: the schedule of office hours may change from time to time,
+in which case an announcement will be made on the course Piazza.
+</i></b>
+</p>
+</div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Staff</div>
+  <div class="panel-body">
+    <a name="staff"></a>
+    <table class="table">
+      <thead>
+        <tr><th></th><th></th></tr>
+      </thead>
+	Please use <a href="https://piazza.com/stanford/fall2017/cs145">Piazza</a> to contact the course staff!
+      <tbody>
+        <tr><td><img src="./img/peter.jpg"></td><td>Peter Bailis</td></tr>
+        <tr><td><img src="./img/tara.jpg"></td><td>Tara Balakrishnan (taragb@stanford.edu)</td></tr>
+        <tr><td><img src="./img/aarti.jpg"></td><td>Aarti Bagul</td></tr>
+        <tr><td><img src="./img/dev.jpg"></td><td>Dev Bhargava</td></tr>
+	      <tr><td><img src="./img/will.jpg"></td><td>William Chen</td></tr>
+        <tr><td><img src="./img/soroosh.jpg"></td><td>Soroosh Hemmati</td></tr>
+        <tr><td><img src="./img/dennis.jpg"></td><td>Woncheol (Dennis) Jeong</td></tr>
+        <tr><td><img src="./img/simon.jpg"></td><td>Simon Kim</td></tr>
+        <tr><td><img src="./img/parth.jpg"></td><td>Parth Shah</td></tr>
+        <tr><td><img src="./img/lingtong.jpg"></td><td>Lingtong Sun</td></tr>
+        <tr><td><img src="./img/stephanie.jpg"></td><td>Stephanie Tang</td></tr>
+        <tr><td><img src="./img/amelia.jpg"></td><td>Amelia Vu</td></tr>
+        <tr><td><img src="./img/victoria.jpg"></td><td>Victoria Wang</td></tr>
+        <tr><td><img src="./img/hao.jpg"></td><td>Hao Wu</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">OH Schedule</div>
+  <div class="panel-body">
+    <iframe src="https://www.google.com/calendar/embed?src=jfql4os6mq9c1fnuor9pt00tio%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  </div>
+</div>
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">Late Policy</div>
+  <div class="panel-body">
+  <a name="late-policy"></a>
+You will have six 24-hour "late days" that you can use
+throughout the quarter on any of the Problem Sets or Programming
+Projects, unless specified otherwise. Beyond these six late days, we
+will only grant extensions in the case of a severe medical or family
+emergency. Please use your late days wisely. 
+<br> You can use all six late days on each assignment except the last one. 
+You will only be able to use 2 late days on the last assignment - and it must be submitted by 11:59pm on the Friday of dead week (12/8). 
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Honor Code and Collaboration Policy</div>
+  <div class="panel-body">
+<a name="honor-code"></a>
+<p>
+We encourage you to discuss the Programming Projects and Problem Sets
+with other students; it's fine to discuss overall strategy and
+collaborate with a partner or in a small group, as both giving and
+receiving advice will help you to learn.
+</p>
+<p>
+However, for the Programming Projects, you must write your own code: it's not OK to share code or write code collaboratively. (This includes posting and/or sharing your code publicly, such as on GitHub!) Likewise, for the Problem Sets, you must write up your own solutions to all of the problems, and you must cite all people you worked with. If you do not do so, we will consider this a violation of the <a href="https://communitystandards.stanford.edu/student-conduct-process/honor-code-and-fundamental-standard">Stanford Honor Code</a>.
+</p>
+<p>
+If you consult any resources outside of the materials provided in
+class, you must cite these sources. We reserve the right to assign a
+penalty if your answers are substantially derivative, but, as long as
+you provide appropriate citations, we will not consider this an Honor
+Code violation.
+</p>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Students with Documented Disabilities</div>
+  <div class="panel-body">
+<a name="disability"></a>
+Students who may need an academic accommodation based on the impact of
+a disability must initiate the request through the Office of
+Accessible Education (OAE). OAE staff will evaluate the request with
+required documentation, recommend reasonable accommodations, and
+prepare an Accommodation Letter for faculty dated in the current
+quarter in which the request is being made. Students should contact
+OAE as soon as possible since timely notice is needed to coordinate
+accommodations: 563 Salvatierra Walk; phone: (650) 723-1066.
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Feedback</div>
+  <div class="panel-body">
+    Please provide feedback to Peter and/or any of the course staff <a href="https://piazza.com/stanford/fall2017/cs145">via Piazza</a>, or <a href="https://goo.gl/forms/e2lshLKDgW1pcbjS2">anonymously via the this form</a>, which only Peter can access.
+  </div>
+</div>
+
+</div>
+</body>
+
+</html>
