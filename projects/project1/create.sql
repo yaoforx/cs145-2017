@@ -6,8 +6,10 @@ create table itemTable (
 	foreign key (itemId) references categoryTable(itemId),
 	foreign key (itemId) references priceTable(itemId)
 
-	foreign key (itemId) references sellerTable
+	foreign key (itemId) references sellerTable(itemId)
 );
+
+
 drop table if exists priceTable;
 create table priceTable (
 	itemId integer primary key,
@@ -16,14 +18,17 @@ create table priceTable (
 	priceFirstBid real,
 	priceCurrent real,
 	priceNumberBit integer,
-	Buy_Price real,
+	Buy_Price real
 );
 drop table if exists bidTable;
 create table bidTable (
-	bidUserId text primary key,
+	bidUserId text,
+	itemId integer,
 	bidTime text,
 	bidAmount real,
-	foreign key (bidUserId) references userTable(userId)
+	primary key (bidUserId,bidTime),
+	foreign key (bidUserId) references userTable(userId),
+	foreign key (itemId) references itemTable(itemId)
 );
 
 drop table if exists categoryTable;

@@ -154,7 +154,7 @@ def parseJson(json_file):
                     else:
                         bidCountry = "None"
 
-                    bidTable += bidUserId +  columnSeparator + bidTime \
+                    bidTable += bidUserId +  columnSeparator + itemId + columnSeparator + bidTime \
                     + columnSeparator + bidAmount +  "\n"
                     
                     userTable += bidUserId + columnSeparator + bidRating + columnSeparator\
