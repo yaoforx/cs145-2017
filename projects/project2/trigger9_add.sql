@@ -2,7 +2,7 @@
 PRAGMA forein_keys = ON;
 drop trigger if exists preventBidSelf;
 create trigger preventBidSelf
-after insert on bidTable
+before insert on bidTable
 for each row
 when exists (
 	select * from
