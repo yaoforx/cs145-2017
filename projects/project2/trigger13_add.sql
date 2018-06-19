@@ -10,6 +10,6 @@ when exists (
 	where priceTable.itemId = new.itemId
 )
 begin
-	update priceTable set priceNumberBid = priceNumberBid + q
+	update priceTable set priceNumberBid = priceNumberBid + 1
 	where priceTable.itemId = new.itemId;
 end;

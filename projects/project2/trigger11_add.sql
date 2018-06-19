@@ -2,7 +2,7 @@
 PRAGMA foreign_keys = ON;
 drop trigger if exists bidTimeConstrain;
 create trigger bidTimeConstrain
-after insert on bidTable
+before insert on bidTable
 for each row
 when exists(
 	select * from
