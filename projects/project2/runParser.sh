@@ -16,6 +16,5 @@ sort -u sellerTable.dat | sed '/^ *$/d' > seller.dat
 
 sort -u userTable.dat | sed '/^ *$/d' > user.dat
 
-sqlite3 data.db < create.sql
-sqlite3 data.db < load.txt
+
 
