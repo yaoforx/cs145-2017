@@ -114,8 +114,7 @@ def getAuction(itemID,userID,category,description,minPrice,maxPrice,status):
         query_string += " AND priceCurrent >= $minPrice"
     if maxPrice:
         query_string += " AND priceCurrent <= $maxPrice"
-    if status:
-        query_string += getStatus(status)
+
 
     t = transaction() 
     try:

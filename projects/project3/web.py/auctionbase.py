@@ -83,11 +83,21 @@ class search:
 
         itemID = post_param["itemID"]
         userID = post_param["userID"]
-        category = post_param["category"]
-        description = post_param["description"]
-        minPrice = post_param["minPrice"]
-        maxPrice = post_param["maxPrice"]
-        status = post_param["status"]
+        category = ""
+        description = ""
+        minPrice = ""
+        maxPrice = ""
+        status = ""
+        if 'category' in post_param:
+            category = post_param["category"] 
+        if "description" in post_param:
+            description = post_param["description"]
+        if "minPrice" in post_param:
+            minPrice = post_param["minPrice"]
+        if "maxPrice"in post_param:
+            maxPrice = post_param["maxPrice"]
+        if "status" in post_param:
+            status = post_param["status"]
 
         result = sqlitedb.getAuction(itemID, userID, category, description, minPrice, maxPrice, status)
 
