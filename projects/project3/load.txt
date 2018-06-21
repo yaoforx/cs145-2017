@@ -1,0 +1,19 @@
+.separator |
+
+.import item.dat itemTable
+update itemTable set itemDescript = null where itemDescript = "None";
+
+.import bid.dat bidTable
+
+.import price.dat priceTable
+update priceTable set Buy_Price = null where Buy_Price = "None";
+
+.import category.dat categoryTable
+.import seller.dat sellerTable
+.import user.dat userTable
+update userTable set userLocation = null where userLocation = "None";
+update userTable set userCountry = null where userCountry = "None";
+
+Rm *.dat
+
+

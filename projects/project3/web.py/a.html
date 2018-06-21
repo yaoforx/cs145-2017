@@ -1,0 +1,5911 @@
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>AuctionBase</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+  <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">AuctionBase</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      <li><a href="currtime">Current Time</a></li>
+      <li><a href="selecttime">Select a Time</a></li>
+      <li><a href="search">Search</a></li>
+      <li><a href="add_bid">Add bid</a></li>
+      </ul>
+      </div>
+  
+  </div>
+  </nav>
+  
+  <div class="panel panel-default">
+  <div class="panel-body" style="padding:0 10% 20px 10%">
+  <div id="content">
+<h3> Search </h3> 
+
+<form method="POST" action="search" role="form" style="max-width:400px; width:100%">
+	
+	<div class="alert alert-warning" role="alert">Found match</div>
+	
+	<div class="alert alert-info">Anything not input will not be taken into account</div>
+	<div class="form-group">
+	  <label for="itemID">Item ID</label>
+	  <input type="text" class="form-control" id="itemID" name="itemID" />
+	</div>
+	<div class="form-group">
+	  <label for="userID">User ID</label>
+	  <input type="text" name="userID" class="form-control" id="userID" />
+	</div>
+	<div class="form-group">
+	  <label for="minPrice">Min Price</label>
+	  <input type="text" name="minPrice" class="form-control" id="minPrice" />
+	</div>
+	<div class="form-group">
+	  <label for="maxPrice">Max Price</label>
+	  <input type="text" name="maxPrice" class="form-control" id="maxPrice" />
+	</div>
+	<div class="form-group">
+		<label for="status">Status &nbsp;&nbsp;</label>
+		<div class="radio-inline"><label><input type="radio" name="status" value="open">Open</label></div>
+		<div class="radio-inline"><label><input type="radio" name="status" value="close">Close</label></div>
+		<div class="radio-inline"><label><input type="radio" name="status" value="notStarted">Not Started</label></div>
+		<div class="radio-inline"><label><input type="radio" name="status" value="all" checked>All</label></div>
+	</div>
+	<div><input type="submit" value="Start Searching!" class="btn btn-primary" /></div>
+</form>
+<h3>Result</h3>
+<ul>
+
+
+	<a href="http://localhost:14500/view?itemID=1043374545">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043374545</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>brand new beautiful handmade european blown glass ornament from christopher radko. this particular ornament features a snowman paired with a little girl bundled up in here pale blue coat sledding along on a silver and blue sled filled with packages. the ornament is approximately 5_ tall and 4_ wide. brand new and never displayed, it is in its clear plastic packaging and comes in the signature black radko gift box. PLEASE READ CAREFULLY!!!! payment by cashier&#39;s check, money order, or personal check. personal checks must clear before shipping. the hold period will be a minimum of 14 days. I ship with UPS and the buyer is responsible for shipping charges. the shipping rate is dependent on both the weight of the package and the distance that package will travel. the minimum shipping/handling charge is $6 and will increase with distance and weight. shipment will occur within 2 to 5 days after the deposit of funds. a $2 surcharge will apply for all USPS shipments if you cannot have or do not want ups service. If you are in need of rush shipping, please let me know and I_will furnish quotes on availability. the BUY-IT-NOW price includes free domestic shipping (international winners and residents of alaska and hawaii receive a credit of like value applied towards their total) and, as an added convenience, you can pay with paypal if you utilize the feature. paypal is not accepted if you win the auction during the course of the regular bidding-I only accept paypal if the buy it now feature is utilized. thank you for your understanding and good luck! Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>30.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>30.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-03 18:10:40</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>rulabula</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-13 18:10:40</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Christopher Radko</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>christopher radko &amp;#124; fritz n_ frosty sledding</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043374545">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043374545</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>brand new beautiful handmade european blown glass ornament from christopher radko. this particular ornament features a snowman paired with a little girl bundled up in here pale blue coat sledding along on a silver and blue sled filled with packages. the ornament is approximately 5_ tall and 4_ wide. brand new and never displayed, it is in its clear plastic packaging and comes in the signature black radko gift box. PLEASE READ CAREFULLY!!!! payment by cashier&#39;s check, money order, or personal check. personal checks must clear before shipping. the hold period will be a minimum of 14 days. I ship with UPS and the buyer is responsible for shipping charges. the shipping rate is dependent on both the weight of the package and the distance that package will travel. the minimum shipping/handling charge is $6 and will increase with distance and weight. shipment will occur within 2 to 5 days after the deposit of funds. a $2 surcharge will apply for all USPS shipments if you cannot have or do not want ups service. If you are in need of rush shipping, please let me know and I_will furnish quotes on availability. the BUY-IT-NOW price includes free domestic shipping (international winners and residents of alaska and hawaii receive a credit of like value applied towards their total) and, as an added convenience, you can pay with paypal if you utilize the feature. paypal is not accepted if you win the auction during the course of the regular bidding-I only accept paypal if the buy it now feature is utilized. thank you for your understanding and good luck! Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>30.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>30.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-03 18:10:40</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>rulabula</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-13 18:10:40</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Collectibles</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>christopher radko &amp;#124; fritz n_ frosty sledding</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043374545">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043374545</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>brand new beautiful handmade european blown glass ornament from christopher radko. this particular ornament features a snowman paired with a little girl bundled up in here pale blue coat sledding along on a silver and blue sled filled with packages. the ornament is approximately 5_ tall and 4_ wide. brand new and never displayed, it is in its clear plastic packaging and comes in the signature black radko gift box. PLEASE READ CAREFULLY!!!! payment by cashier&#39;s check, money order, or personal check. personal checks must clear before shipping. the hold period will be a minimum of 14 days. I ship with UPS and the buyer is responsible for shipping charges. the shipping rate is dependent on both the weight of the package and the distance that package will travel. the minimum shipping/handling charge is $6 and will increase with distance and weight. shipment will occur within 2 to 5 days after the deposit of funds. a $2 surcharge will apply for all USPS shipments if you cannot have or do not want ups service. If you are in need of rush shipping, please let me know and I_will furnish quotes on availability. the BUY-IT-NOW price includes free domestic shipping (international winners and residents of alaska and hawaii receive a credit of like value applied towards their total) and, as an added convenience, you can pay with paypal if you utilize the feature. paypal is not accepted if you win the auction during the course of the regular bidding-I only accept paypal if the buy it now feature is utilized. thank you for your understanding and good luck! Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>30.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>30.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-03 18:10:40</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>rulabula</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-13 18:10:40</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Decorative &amp; Holiday</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>christopher radko &amp;#124; fritz n_ frosty sledding</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043374545">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043374545</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>brand new beautiful handmade european blown glass ornament from christopher radko. this particular ornament features a snowman paired with a little girl bundled up in here pale blue coat sledding along on a silver and blue sled filled with packages. the ornament is approximately 5_ tall and 4_ wide. brand new and never displayed, it is in its clear plastic packaging and comes in the signature black radko gift box. PLEASE READ CAREFULLY!!!! payment by cashier&#39;s check, money order, or personal check. personal checks must clear before shipping. the hold period will be a minimum of 14 days. I ship with UPS and the buyer is responsible for shipping charges. the shipping rate is dependent on both the weight of the package and the distance that package will travel. the minimum shipping/handling charge is $6 and will increase with distance and weight. shipment will occur within 2 to 5 days after the deposit of funds. a $2 surcharge will apply for all USPS shipments if you cannot have or do not want ups service. If you are in need of rush shipping, please let me know and I_will furnish quotes on availability. the BUY-IT-NOW price includes free domestic shipping (international winners and residents of alaska and hawaii receive a credit of like value applied towards their total) and, as an added convenience, you can pay with paypal if you utilize the feature. paypal is not accepted if you win the auction during the course of the regular bidding-I only accept paypal if the buy it now feature is utilized. thank you for your understanding and good luck! Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>30.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>30.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-03 18:10:40</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>rulabula</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-13 18:10:40</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Decorative by Brand</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>christopher radko &amp;#124; fritz n_ frosty sledding</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043562035">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043562035</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Dreamsicle Club Members Only Figurine 1995 4 1/2&#34; Issued:1995 * Retired:1995 This piece is in mint condition and in the original box. Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>15.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>15.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-04 03:09:56</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>sharkbud</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 03:09:56</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Collectibles</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Town Crier CD102</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043562035">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043562035</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Dreamsicle Club Members Only Figurine 1995 4 1/2&#34; Issued:1995 * Retired:1995 This piece is in mint condition and in the original box. Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>15.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>15.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-04 03:09:56</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>sharkbud</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 03:09:56</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Decorative &amp; Holiday</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Town Crier CD102</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043562035">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043562035</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Dreamsicle Club Members Only Figurine 1995 4 1/2&#34; Issued:1995 * Retired:1995 This piece is in mint condition and in the original box. Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>15.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>15.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-04 03:09:56</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>sharkbud</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 03:09:56</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Decorative by Brand</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Town Crier CD102</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043562035">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043562035</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Dreamsicle Club Members Only Figurine 1995 4 1/2&#34; Issued:1995 * Retired:1995 This piece is in mint condition and in the original box. Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>15.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>15.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-04 03:09:56</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>sharkbud</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 03:09:56</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Dreamsicles</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Town Crier CD102</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043650580">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043650580</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>This is new in the box bought for Avon representitives to wear. Made with high quality quartz movement which provides accuracy within seconds per month. Silver &amp; gold adjustable band, gold face with &#34;Let&#39;s Talk Avon&#34;, surrounded with diamonds around the face. 2000 Item, save &amp; keep as a collectible for years to come! Ship $4, paypal/money orders ship same day, personal checks held 10 days. Buy it now &amp; have in time for the holidays! Great gift to give your Avon Rep.! See my other auctions &amp; combine sales to save on shipping. No PO Boxes. Must close in 10 days from auction end. Free Honesty Counters powered by Andale! Payment Details U.S. Shipping and Handling $4.00 Shipping Insurance per item (optional) $1.10 Sales Tax (0.000% if shipped to none) _ Learn more about checkout Payment Instructions &amp;lt;!-- Begin PayPal Logo --&amp;gt; &amp;lt;A HREF=</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>24.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>24.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-04 10:30:55</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>nikkinap</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 10:30:55</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Avon</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Authentic Avon Quartz Silver/Gold Watch NIB</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043650580">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043650580</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>This is new in the box bought for Avon representitives to wear. Made with high quality quartz movement which provides accuracy within seconds per month. Silver &amp; gold adjustable band, gold face with &#34;Let&#39;s Talk Avon&#34;, surrounded with diamonds around the face. 2000 Item, save &amp; keep as a collectible for years to come! Ship $4, paypal/money orders ship same day, personal checks held 10 days. Buy it now &amp; have in time for the holidays! Great gift to give your Avon Rep.! See my other auctions &amp; combine sales to save on shipping. No PO Boxes. Must close in 10 days from auction end. Free Honesty Counters powered by Andale! Payment Details U.S. Shipping and Handling $4.00 Shipping Insurance per item (optional) $1.10 Sales Tax (0.000% if shipped to none) _ Learn more about checkout Payment Instructions &amp;lt;!-- Begin PayPal Logo --&amp;gt; &amp;lt;A HREF=</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>24.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>24.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-04 10:30:55</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>nikkinap</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 10:30:55</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Collectibles</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Authentic Avon Quartz Silver/Gold Watch NIB</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043650580">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043650580</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>This is new in the box bought for Avon representitives to wear. Made with high quality quartz movement which provides accuracy within seconds per month. Silver &amp; gold adjustable band, gold face with &#34;Let&#39;s Talk Avon&#34;, surrounded with diamonds around the face. 2000 Item, save &amp; keep as a collectible for years to come! Ship $4, paypal/money orders ship same day, personal checks held 10 days. Buy it now &amp; have in time for the holidays! Great gift to give your Avon Rep.! See my other auctions &amp; combine sales to save on shipping. No PO Boxes. Must close in 10 days from auction end. Free Honesty Counters powered by Andale! Payment Details U.S. Shipping and Handling $4.00 Shipping Insurance per item (optional) $1.10 Sales Tax (0.000% if shipped to none) _ Learn more about checkout Payment Instructions &amp;lt;!-- Begin PayPal Logo --&amp;gt; &amp;lt;A HREF=</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>24.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>24.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-04 10:30:55</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>nikkinap</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 10:30:55</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Decorative &amp; Holiday</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Authentic Avon Quartz Silver/Gold Watch NIB</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043650580">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043650580</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>This is new in the box bought for Avon representitives to wear. Made with high quality quartz movement which provides accuracy within seconds per month. Silver &amp; gold adjustable band, gold face with &#34;Let&#39;s Talk Avon&#34;, surrounded with diamonds around the face. 2000 Item, save &amp; keep as a collectible for years to come! Ship $4, paypal/money orders ship same day, personal checks held 10 days. Buy it now &amp; have in time for the holidays! Great gift to give your Avon Rep.! See my other auctions &amp; combine sales to save on shipping. No PO Boxes. Must close in 10 days from auction end. Free Honesty Counters powered by Andale! Payment Details U.S. Shipping and Handling $4.00 Shipping Insurance per item (optional) $1.10 Sales Tax (0.000% if shipped to none) _ Learn more about checkout Payment Instructions &amp;lt;!-- Begin PayPal Logo --&amp;gt; &amp;lt;A HREF=</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>24.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>24.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-04 10:30:55</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>nikkinap</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 10:30:55</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Decorative by Brand</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Authentic Avon Quartz Silver/Gold Watch NIB</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043650580">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043650580</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>This is new in the box bought for Avon representitives to wear. Made with high quality quartz movement which provides accuracy within seconds per month. Silver &amp; gold adjustable band, gold face with &#34;Let&#39;s Talk Avon&#34;, surrounded with diamonds around the face. 2000 Item, save &amp; keep as a collectible for years to come! Ship $4, paypal/money orders ship same day, personal checks held 10 days. Buy it now &amp; have in time for the holidays! Great gift to give your Avon Rep.! See my other auctions &amp; combine sales to save on shipping. No PO Boxes. Must close in 10 days from auction end. Free Honesty Counters powered by Andale! Payment Details U.S. Shipping and Handling $4.00 Shipping Insurance per item (optional) $1.10 Sales Tax (0.000% if shipped to none) _ Learn more about checkout Payment Instructions &amp;lt;!-- Begin PayPal Logo --&amp;gt; &amp;lt;A HREF=</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>24.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>24.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-04 10:30:55</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>nikkinap</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 10:30:55</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Other Avon Items</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Authentic Avon Quartz Silver/Gold Watch NIB</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043899828">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043899828</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>15 HAPPY YEARS TOGETHER WHAT A TWEET! COMMEMORATIVE ANNUAL 1993 FIGURINE 1993 BUTTERFLY SYMBOL Figurine is 5.25_ tall by 8_ long. Bunnies listen as Angel leads BLUEBIRD Choir. A beauty of a figurine. This is the Commemorative Annual 1993 figurine _ Butterfly Symbol. Figurine is brand new in PRECIOUS MOMENTS purple box _ never used _ and comes with original hang tag, tent card and paperwork. ****ALSO included in this display is a 3_ button _ with clip on the back _ commemorating the 15 Happpy Years also _ very pretty _ looks just like the picture on the Precious Moments box. No chips, cracks or breaks - a perfect, mint Precious Moments........figurine...... BUYER to pay $8 shipping cost. Payment by PayPal, Bidpay, money order or cashier_s check. Personal check discouraged as I do hold for bank clearance. ~~THANKS FOR LOOKING~~ ~~NOTE ~~ LOW RESERVE~~ ~~PLEASE CHECK MY OTHER AUCTIONS~~ I accept payments from anyone with PayPal CLICK ON LOGO I accept payments from anyone with Bidpay CLICK ON LOGO Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>19.9</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>19.9</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-04 18:35:48</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>robray</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 18:35:48</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Collectibles</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>PRECIOUS MOMENTS 15 HAPPY YEARS A TWEET BIRDS</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043899828">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043899828</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>15 HAPPY YEARS TOGETHER WHAT A TWEET! COMMEMORATIVE ANNUAL 1993 FIGURINE 1993 BUTTERFLY SYMBOL Figurine is 5.25_ tall by 8_ long. Bunnies listen as Angel leads BLUEBIRD Choir. A beauty of a figurine. This is the Commemorative Annual 1993 figurine _ Butterfly Symbol. Figurine is brand new in PRECIOUS MOMENTS purple box _ never used _ and comes with original hang tag, tent card and paperwork. ****ALSO included in this display is a 3_ button _ with clip on the back _ commemorating the 15 Happpy Years also _ very pretty _ looks just like the picture on the Precious Moments box. No chips, cracks or breaks - a perfect, mint Precious Moments........figurine...... BUYER to pay $8 shipping cost. Payment by PayPal, Bidpay, money order or cashier_s check. Personal check discouraged as I do hold for bank clearance. ~~THANKS FOR LOOKING~~ ~~NOTE ~~ LOW RESERVE~~ ~~PLEASE CHECK MY OTHER AUCTIONS~~ I accept payments from anyone with PayPal CLICK ON LOGO I accept payments from anyone with Bidpay CLICK ON LOGO Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>19.9</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>19.9</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-04 18:35:48</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>robray</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 18:35:48</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Decorative &amp; Holiday</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>PRECIOUS MOMENTS 15 HAPPY YEARS A TWEET BIRDS</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043899828">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043899828</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>15 HAPPY YEARS TOGETHER WHAT A TWEET! COMMEMORATIVE ANNUAL 1993 FIGURINE 1993 BUTTERFLY SYMBOL Figurine is 5.25_ tall by 8_ long. Bunnies listen as Angel leads BLUEBIRD Choir. A beauty of a figurine. This is the Commemorative Annual 1993 figurine _ Butterfly Symbol. Figurine is brand new in PRECIOUS MOMENTS purple box _ never used _ and comes with original hang tag, tent card and paperwork. ****ALSO included in this display is a 3_ button _ with clip on the back _ commemorating the 15 Happpy Years also _ very pretty _ looks just like the picture on the Precious Moments box. No chips, cracks or breaks - a perfect, mint Precious Moments........figurine...... BUYER to pay $8 shipping cost. Payment by PayPal, Bidpay, money order or cashier_s check. Personal check discouraged as I do hold for bank clearance. ~~THANKS FOR LOOKING~~ ~~NOTE ~~ LOW RESERVE~~ ~~PLEASE CHECK MY OTHER AUCTIONS~~ I accept payments from anyone with PayPal CLICK ON LOGO I accept payments from anyone with Bidpay CLICK ON LOGO Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>19.9</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>19.9</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-04 18:35:48</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>robray</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 18:35:48</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Decorative by Brand</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>PRECIOUS MOMENTS 15 HAPPY YEARS A TWEET BIRDS</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043899828">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043899828</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>15 HAPPY YEARS TOGETHER WHAT A TWEET! COMMEMORATIVE ANNUAL 1993 FIGURINE 1993 BUTTERFLY SYMBOL Figurine is 5.25_ tall by 8_ long. Bunnies listen as Angel leads BLUEBIRD Choir. A beauty of a figurine. This is the Commemorative Annual 1993 figurine _ Butterfly Symbol. Figurine is brand new in PRECIOUS MOMENTS purple box _ never used _ and comes with original hang tag, tent card and paperwork. ****ALSO included in this display is a 3_ button _ with clip on the back _ commemorating the 15 Happpy Years also _ very pretty _ looks just like the picture on the Precious Moments box. No chips, cracks or breaks - a perfect, mint Precious Moments........figurine...... BUYER to pay $8 shipping cost. Payment by PayPal, Bidpay, money order or cashier_s check. Personal check discouraged as I do hold for bank clearance. ~~THANKS FOR LOOKING~~ ~~NOTE ~~ LOW RESERVE~~ ~~PLEASE CHECK MY OTHER AUCTIONS~~ I accept payments from anyone with PayPal CLICK ON LOGO I accept payments from anyone with Bidpay CLICK ON LOGO Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>19.9</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>19.9</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-04 18:35:48</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>robray</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 18:35:48</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Enesco</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>PRECIOUS MOMENTS 15 HAPPY YEARS A TWEET BIRDS</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043899828">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043899828</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>15 HAPPY YEARS TOGETHER WHAT A TWEET! COMMEMORATIVE ANNUAL 1993 FIGURINE 1993 BUTTERFLY SYMBOL Figurine is 5.25_ tall by 8_ long. Bunnies listen as Angel leads BLUEBIRD Choir. A beauty of a figurine. This is the Commemorative Annual 1993 figurine _ Butterfly Symbol. Figurine is brand new in PRECIOUS MOMENTS purple box _ never used _ and comes with original hang tag, tent card and paperwork. ****ALSO included in this display is a 3_ button _ with clip on the back _ commemorating the 15 Happpy Years also _ very pretty _ looks just like the picture on the Precious Moments box. No chips, cracks or breaks - a perfect, mint Precious Moments........figurine...... BUYER to pay $8 shipping cost. Payment by PayPal, Bidpay, money order or cashier_s check. Personal check discouraged as I do hold for bank clearance. ~~THANKS FOR LOOKING~~ ~~NOTE ~~ LOW RESERVE~~ ~~PLEASE CHECK MY OTHER AUCTIONS~~ I accept payments from anyone with PayPal CLICK ON LOGO I accept payments from anyone with Bidpay CLICK ON LOGO Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>19.9</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>19.9</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-04 18:35:48</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>robray</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 18:35:48</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Precious Moments</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>PRECIOUS MOMENTS 15 HAPPY YEARS A TWEET BIRDS</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043937480">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043937480</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>ENESCO MARY&#39;S MOO MOO COUPLE W BABY FIGURINE ..THIS PIECE IS A MUST FOR THE COLLECTOR OF M/M/M/ ..THIS PIECE IS FROM THE 1996 COLLECTION ..RETAIL IN 96 WAS $48 GET THIS CHERISHED PIECE FOR A LOT LESS ...5.95 FOR S &amp; H GOOD LUCK!!!!!! Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>9.98</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>9.98</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-04 19:11:42</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>joetsales</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 19:11:42</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Collectibles</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>ENESCO MARY&#39;S MOO MOOS COW COUPLE W BABY</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043937480">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043937480</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>ENESCO MARY&#39;S MOO MOO COUPLE W BABY FIGURINE ..THIS PIECE IS A MUST FOR THE COLLECTOR OF M/M/M/ ..THIS PIECE IS FROM THE 1996 COLLECTION ..RETAIL IN 96 WAS $48 GET THIS CHERISHED PIECE FOR A LOT LESS ...5.95 FOR S &amp; H GOOD LUCK!!!!!! Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>9.98</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>9.98</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-04 19:11:42</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>joetsales</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 19:11:42</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Decorative &amp; Holiday</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>ENESCO MARY&#39;S MOO MOOS COW COUPLE W BABY</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043937480">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043937480</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>ENESCO MARY&#39;S MOO MOO COUPLE W BABY FIGURINE ..THIS PIECE IS A MUST FOR THE COLLECTOR OF M/M/M/ ..THIS PIECE IS FROM THE 1996 COLLECTION ..RETAIL IN 96 WAS $48 GET THIS CHERISHED PIECE FOR A LOT LESS ...5.95 FOR S &amp; H GOOD LUCK!!!!!! Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>9.98</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>9.98</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-04 19:11:42</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>joetsales</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 19:11:42</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Decorative by Brand</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>ENESCO MARY&#39;S MOO MOOS COW COUPLE W BABY</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043937480">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043937480</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>ENESCO MARY&#39;S MOO MOO COUPLE W BABY FIGURINE ..THIS PIECE IS A MUST FOR THE COLLECTOR OF M/M/M/ ..THIS PIECE IS FROM THE 1996 COLLECTION ..RETAIL IN 96 WAS $48 GET THIS CHERISHED PIECE FOR A LOT LESS ...5.95 FOR S &amp; H GOOD LUCK!!!!!! Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>9.98</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>9.98</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-04 19:11:42</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>joetsales</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 19:11:42</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Enesco</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>ENESCO MARY&#39;S MOO MOOS COW COUPLE W BABY</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1043937480">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1043937480</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>ENESCO MARY&#39;S MOO MOO COUPLE W BABY FIGURINE ..THIS PIECE IS A MUST FOR THE COLLECTOR OF M/M/M/ ..THIS PIECE IS FROM THE 1996 COLLECTION ..RETAIL IN 96 WAS $48 GET THIS CHERISHED PIECE FOR A LOT LESS ...5.95 FOR S &amp; H GOOD LUCK!!!!!! Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>9.98</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>9.98</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-04 19:11:42</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>joetsales</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 19:11:42</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Mary&#39;s Moo Moos</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>ENESCO MARY&#39;S MOO MOOS COW COUPLE W BABY</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044104207">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044104207</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Classics Illustrated, No.162, ROBUR THE CONQUEROR, by Jules Verne, HRN 162, The Original, published by Gilberton Company Inc., in 1961, is in Fine/Fine- condition. the front cover looks Fine, very light edgewear around page showing. The Spine is in Fine- condition, light edgewear around bottom staple barely noticeable. The back cover is fine condition, very light age yellowing and the lightest of edgewear around page apparent. The interior pages are complete and in Very Fine condition, light age yellowing prevails throughout pages. Shipping is $3.50 priority mail, international shipping rates are higher. Click on a picture to enlarge &#39;) //-- &#39;) //-- Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>17.5</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>17.5</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 05:15:30</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>juriju@hotmail.com</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 05:15:30</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Classics Illustrated</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Classics Illustrated, No.162, 1961, (O), F/F-</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044104207">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044104207</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Classics Illustrated, No.162, ROBUR THE CONQUEROR, by Jules Verne, HRN 162, The Original, published by Gilberton Company Inc., in 1961, is in Fine/Fine- condition. the front cover looks Fine, very light edgewear around page showing. The Spine is in Fine- condition, light edgewear around bottom staple barely noticeable. The back cover is fine condition, very light age yellowing and the lightest of edgewear around page apparent. The interior pages are complete and in Very Fine condition, light age yellowing prevails throughout pages. Shipping is $3.50 priority mail, international shipping rates are higher. Click on a picture to enlarge &#39;) //-- &#39;) //-- Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>17.5</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>17.5</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 05:15:30</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>juriju@hotmail.com</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 05:15:30</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Collectibles</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Classics Illustrated, No.162, 1961, (O), F/F-</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044104207">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044104207</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Classics Illustrated, No.162, ROBUR THE CONQUEROR, by Jules Verne, HRN 162, The Original, published by Gilberton Company Inc., in 1961, is in Fine/Fine- condition. the front cover looks Fine, very light edgewear around page showing. The Spine is in Fine- condition, light edgewear around bottom staple barely noticeable. The back cover is fine condition, very light age yellowing and the lightest of edgewear around page apparent. The interior pages are complete and in Very Fine condition, light age yellowing prevails throughout pages. Shipping is $3.50 priority mail, international shipping rates are higher. Click on a picture to enlarge &#39;) //-- &#39;) //-- Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>17.5</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>17.5</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 05:15:30</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>juriju@hotmail.com</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 05:15:30</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Comics</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Classics Illustrated, No.162, 1961, (O), F/F-</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044104207">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044104207</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Classics Illustrated, No.162, ROBUR THE CONQUEROR, by Jules Verne, HRN 162, The Original, published by Gilberton Company Inc., in 1961, is in Fine/Fine- condition. the front cover looks Fine, very light edgewear around page showing. The Spine is in Fine- condition, light edgewear around bottom staple barely noticeable. The back cover is fine condition, very light age yellowing and the lightest of edgewear around page apparent. The interior pages are complete and in Very Fine condition, light age yellowing prevails throughout pages. Shipping is $3.50 priority mail, international shipping rates are higher. Click on a picture to enlarge &#39;) //-- &#39;) //-- Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>17.5</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>17.5</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 05:15:30</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>juriju@hotmail.com</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 05:15:30</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Pop Culture</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Classics Illustrated, No.162, 1961, (O), F/F-</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044104207">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044104207</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Classics Illustrated, No.162, ROBUR THE CONQUEROR, by Jules Verne, HRN 162, The Original, published by Gilberton Company Inc., in 1961, is in Fine/Fine- condition. the front cover looks Fine, very light edgewear around page showing. The Spine is in Fine- condition, light edgewear around bottom staple barely noticeable. The back cover is fine condition, very light age yellowing and the lightest of edgewear around page apparent. The interior pages are complete and in Very Fine condition, light age yellowing prevails throughout pages. Shipping is $3.50 priority mail, international shipping rates are higher. Click on a picture to enlarge &#39;) //-- &#39;) //-- Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>17.5</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>17.5</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 05:15:30</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>juriju@hotmail.com</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 05:15:30</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Silver Age (1956-69)</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Classics Illustrated, No.162, 1961, (O), F/F-</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044107651">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044107651</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>~ ~ ~ ~ VIEW MY OTHER AUCTION ITEMS Vintage Anchor Hocking Salt &amp; Pepper Shakers These s&amp;p_s are in great shape. The glass is in excellent condition w/ no chips, cracks, or scratches. The lids are worn, as shown in photos. The glass is ribbed and they stand 4 __ tall. The cover reads on the sides as follows: 53-NKCT, Anchor Hocking, U.S.A.! I now accept PAYPAL!!!! Feel free to email me with any questions you may have or for additional photos @ cmekjian@mediaone.net. Free Honesty Counters powered by Andale! Payment Details U.S. Shipping and Handling $3.90 Shipping Insurance per item (optional) $1.10 Sales Tax (none) _ Learn more about checkout Payment Instructions I accept PAYPAL!!!...I also gladly accept personal checks and money orders. Shipping rate is via Priority and only if you live w/in the 48 states...*Insurance is optional* Thank you! Cheryl</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>3.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>14.39</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 05:35:50</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>edsoldstuff</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 05:35:50</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Collectibles</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Vintage Anchor Hocking Salt &amp; Pepper Shakers</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>5</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044107651">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044107651</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>~ ~ ~ ~ VIEW MY OTHER AUCTION ITEMS Vintage Anchor Hocking Salt &amp; Pepper Shakers These s&amp;p_s are in great shape. The glass is in excellent condition w/ no chips, cracks, or scratches. The lids are worn, as shown in photos. The glass is ribbed and they stand 4 __ tall. The cover reads on the sides as follows: 53-NKCT, Anchor Hocking, U.S.A.! I now accept PAYPAL!!!! Feel free to email me with any questions you may have or for additional photos @ cmekjian@mediaone.net. Free Honesty Counters powered by Andale! Payment Details U.S. Shipping and Handling $3.90 Shipping Insurance per item (optional) $1.10 Sales Tax (none) _ Learn more about checkout Payment Instructions I accept PAYPAL!!!...I also gladly accept personal checks and money orders. Shipping rate is via Priority and only if you live w/in the 48 states...*Insurance is optional* Thank you! Cheryl</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>3.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>14.39</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 05:35:50</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>edsoldstuff</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 05:35:50</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Housewares &amp; Kitchenware</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Vintage Anchor Hocking Salt &amp; Pepper Shakers</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>5</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044107651">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044107651</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>~ ~ ~ ~ VIEW MY OTHER AUCTION ITEMS Vintage Anchor Hocking Salt &amp; Pepper Shakers These s&amp;p_s are in great shape. The glass is in excellent condition w/ no chips, cracks, or scratches. The lids are worn, as shown in photos. The glass is ribbed and they stand 4 __ tall. The cover reads on the sides as follows: 53-NKCT, Anchor Hocking, U.S.A.! I now accept PAYPAL!!!! Feel free to email me with any questions you may have or for additional photos @ cmekjian@mediaone.net. Free Honesty Counters powered by Andale! Payment Details U.S. Shipping and Handling $3.90 Shipping Insurance per item (optional) $1.10 Sales Tax (none) _ Learn more about checkout Payment Instructions I accept PAYPAL!!!...I also gladly accept personal checks and money orders. Shipping rate is via Priority and only if you live w/in the 48 states...*Insurance is optional* Thank you! Cheryl</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>3.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>14.39</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 05:35:50</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>edsoldstuff</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 05:35:50</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Kitchenware</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Vintage Anchor Hocking Salt &amp; Pepper Shakers</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>5</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044107651">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044107651</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>~ ~ ~ ~ VIEW MY OTHER AUCTION ITEMS Vintage Anchor Hocking Salt &amp; Pepper Shakers These s&amp;p_s are in great shape. The glass is in excellent condition w/ no chips, cracks, or scratches. The lids are worn, as shown in photos. The glass is ribbed and they stand 4 __ tall. The cover reads on the sides as follows: 53-NKCT, Anchor Hocking, U.S.A.! I now accept PAYPAL!!!! Feel free to email me with any questions you may have or for additional photos @ cmekjian@mediaone.net. Free Honesty Counters powered by Andale! Payment Details U.S. Shipping and Handling $3.90 Shipping Insurance per item (optional) $1.10 Sales Tax (none) _ Learn more about checkout Payment Instructions I accept PAYPAL!!!...I also gladly accept personal checks and money orders. Shipping rate is via Priority and only if you live w/in the 48 states...*Insurance is optional* Thank you! Cheryl</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>3.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>14.39</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 05:35:50</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>edsoldstuff</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 05:35:50</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Range Sets</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Vintage Anchor Hocking Salt &amp; Pepper Shakers</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>5</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044107651">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044107651</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>~ ~ ~ ~ VIEW MY OTHER AUCTION ITEMS Vintage Anchor Hocking Salt &amp; Pepper Shakers These s&amp;p_s are in great shape. The glass is in excellent condition w/ no chips, cracks, or scratches. The lids are worn, as shown in photos. The glass is ribbed and they stand 4 __ tall. The cover reads on the sides as follows: 53-NKCT, Anchor Hocking, U.S.A.! I now accept PAYPAL!!!! Feel free to email me with any questions you may have or for additional photos @ cmekjian@mediaone.net. Free Honesty Counters powered by Andale! Payment Details U.S. Shipping and Handling $3.90 Shipping Insurance per item (optional) $1.10 Sales Tax (none) _ Learn more about checkout Payment Instructions I accept PAYPAL!!!...I also gladly accept personal checks and money orders. Shipping rate is via Priority and only if you live w/in the 48 states...*Insurance is optional* Thank you! Cheryl</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>3.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>14.39</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 05:35:50</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>edsoldstuff</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 05:35:50</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Salt, Pepper Shakers</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Vintage Anchor Hocking Salt &amp; Pepper Shakers</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>5</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044214000">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044214000</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Lot of eight wooden plate holders for collectible Franklin Mint plates. The six larger holders measure approximately 11&#34; (outer diameter) and 8 1/2&#34; (inner diameter). One of the larger holders is cracked, but it is barely noticeable and still usable. The other five are in fair to good condition (minor scratches and nicks). The two smaller holders measure approximately 10&#34; (outer diameter) and 8 7/8&#34; (inner diameter). They are both in good condition and have a gold colored ring on the inner circle. These plate holders are fairly expensive through the company, but we are offering this lot of eight at NO RESERVE! Buyer is to pay for UPS Ground shipping. (Other shipping options are available, but will require a handling fee). We accept checks, money orders, Visa/MC and PayPal. ALL SALES ARE FINAL. Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>10.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>10.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 11:41:12</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>vaness2604@aol.com</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 11:41:12</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Collectibles</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Lot of Eight Franklin Mint Plate Holders - NR</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044214000">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044214000</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Lot of eight wooden plate holders for collectible Franklin Mint plates. The six larger holders measure approximately 11&#34; (outer diameter) and 8 1/2&#34; (inner diameter). One of the larger holders is cracked, but it is barely noticeable and still usable. The other five are in fair to good condition (minor scratches and nicks). The two smaller holders measure approximately 10&#34; (outer diameter) and 8 7/8&#34; (inner diameter). They are both in good condition and have a gold colored ring on the inner circle. These plate holders are fairly expensive through the company, but we are offering this lot of eight at NO RESERVE! Buyer is to pay for UPS Ground shipping. (Other shipping options are available, but will require a handling fee). We accept checks, money orders, Visa/MC and PayPal. ALL SALES ARE FINAL. Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>10.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>10.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 11:41:12</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>vaness2604@aol.com</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 11:41:12</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Decorative &amp; Holiday</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Lot of Eight Franklin Mint Plate Holders - NR</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044214000">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044214000</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Lot of eight wooden plate holders for collectible Franklin Mint plates. The six larger holders measure approximately 11&#34; (outer diameter) and 8 1/2&#34; (inner diameter). One of the larger holders is cracked, but it is barely noticeable and still usable. The other five are in fair to good condition (minor scratches and nicks). The two smaller holders measure approximately 10&#34; (outer diameter) and 8 7/8&#34; (inner diameter). They are both in good condition and have a gold colored ring on the inner circle. These plate holders are fairly expensive through the company, but we are offering this lot of eight at NO RESERVE! Buyer is to pay for UPS Ground shipping. (Other shipping options are available, but will require a handling fee). We accept checks, money orders, Visa/MC and PayPal. ALL SALES ARE FINAL. Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>10.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>10.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 11:41:12</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>vaness2604@aol.com</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 11:41:12</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Decorative by Brand</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Lot of Eight Franklin Mint Plate Holders - NR</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044214000">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044214000</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Lot of eight wooden plate holders for collectible Franklin Mint plates. The six larger holders measure approximately 11&#34; (outer diameter) and 8 1/2&#34; (inner diameter). One of the larger holders is cracked, but it is barely noticeable and still usable. The other five are in fair to good condition (minor scratches and nicks). The two smaller holders measure approximately 10&#34; (outer diameter) and 8 7/8&#34; (inner diameter). They are both in good condition and have a gold colored ring on the inner circle. These plate holders are fairly expensive through the company, but we are offering this lot of eight at NO RESERVE! Buyer is to pay for UPS Ground shipping. (Other shipping options are available, but will require a handling fee). We accept checks, money orders, Visa/MC and PayPal. ALL SALES ARE FINAL. Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>10.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>10.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 11:41:12</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>vaness2604@aol.com</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 11:41:12</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Franklin Mint</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Lot of Eight Franklin Mint Plate Holders - NR</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044214000">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044214000</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Lot of eight wooden plate holders for collectible Franklin Mint plates. The six larger holders measure approximately 11&#34; (outer diameter) and 8 1/2&#34; (inner diameter). One of the larger holders is cracked, but it is barely noticeable and still usable. The other five are in fair to good condition (minor scratches and nicks). The two smaller holders measure approximately 10&#34; (outer diameter) and 8 7/8&#34; (inner diameter). They are both in good condition and have a gold colored ring on the inner circle. These plate holders are fairly expensive through the company, but we are offering this lot of eight at NO RESERVE! Buyer is to pay for UPS Ground shipping. (Other shipping options are available, but will require a handling fee). We accept checks, money orders, Visa/MC and PayPal. ALL SALES ARE FINAL. Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>10.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>10.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 11:41:12</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>vaness2604@aol.com</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 11:41:12</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Other Franklin Mint Items</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Lot of Eight Franklin Mint Plate Holders - NR</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044297318">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044297318</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>This pretty talc tin is empty. It is from the California Perfume Co. 1997 Anniversary Keepsake line, named roses, roses. On the reverse of the tin is the story of David McConnell and how he started Avon. The tin is beginning to rust on the base and has some rust and scratches. This tin belonged to my sister for many years. I believe there is supposed to be a blue top to the tin, but it is gone. The top is rusting considerably, but it is still a pretty Avon memorabilia piece. Shipping and handling will be $2.20 for US sales. Please, no Paypal. Thanks for looking, and good luck! Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 14:53:26</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>nsnrf4max</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 14:53:26</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Avon</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1977 Avon California Perfume Anniversary Talc</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044297318">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044297318</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>This pretty talc tin is empty. It is from the California Perfume Co. 1997 Anniversary Keepsake line, named roses, roses. On the reverse of the tin is the story of David McConnell and how he started Avon. The tin is beginning to rust on the base and has some rust and scratches. This tin belonged to my sister for many years. I believe there is supposed to be a blue top to the tin, but it is gone. The top is rusting considerably, but it is still a pretty Avon memorabilia piece. Shipping and handling will be $2.20 for US sales. Please, no Paypal. Thanks for looking, and good luck! Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 14:53:26</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>nsnrf4max</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 14:53:26</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Collectibles</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1977 Avon California Perfume Anniversary Talc</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044297318">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044297318</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>This pretty talc tin is empty. It is from the California Perfume Co. 1997 Anniversary Keepsake line, named roses, roses. On the reverse of the tin is the story of David McConnell and how he started Avon. The tin is beginning to rust on the base and has some rust and scratches. This tin belonged to my sister for many years. I believe there is supposed to be a blue top to the tin, but it is gone. The top is rusting considerably, but it is still a pretty Avon memorabilia piece. Shipping and handling will be $2.20 for US sales. Please, no Paypal. Thanks for looking, and good luck! Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 14:53:26</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>nsnrf4max</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 14:53:26</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Decorative &amp; Holiday</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1977 Avon California Perfume Anniversary Talc</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044297318">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044297318</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>This pretty talc tin is empty. It is from the California Perfume Co. 1997 Anniversary Keepsake line, named roses, roses. On the reverse of the tin is the story of David McConnell and how he started Avon. The tin is beginning to rust on the base and has some rust and scratches. This tin belonged to my sister for many years. I believe there is supposed to be a blue top to the tin, but it is gone. The top is rusting considerably, but it is still a pretty Avon memorabilia piece. Shipping and handling will be $2.20 for US sales. Please, no Paypal. Thanks for looking, and good luck! Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 14:53:26</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>nsnrf4max</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 14:53:26</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Decorative by Brand</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1977 Avon California Perfume Anniversary Talc</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044297318">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044297318</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>This pretty talc tin is empty. It is from the California Perfume Co. 1997 Anniversary Keepsake line, named roses, roses. On the reverse of the tin is the story of David McConnell and how he started Avon. The tin is beginning to rust on the base and has some rust and scratches. This tin belonged to my sister for many years. I believe there is supposed to be a blue top to the tin, but it is gone. The top is rusting considerably, but it is still a pretty Avon memorabilia piece. Shipping and handling will be $2.20 for US sales. Please, no Paypal. Thanks for looking, and good luck! Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 14:53:26</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>nsnrf4max</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 14:53:26</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Other Avon Items</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1977 Avon California Perfume Anniversary Talc</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044387921">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044387921</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>*YOU ARE BIDDING ON A FINE GILDED BRONZE FRENCH PANTHER SIGNED CARTIER CLOCK * IT IS TITLED PANTHERE EN FURIE * IT IS SIGNED ON THE PANTHER * ON THE BACK OF THE CLOCK IT READS (PATENT MAKE FRANCE) (EDAILLE DOR 1900 PARIS)(SAMUEL MONETI)* THIS INFORMATION IS IN A CIRCLE ABOUT THE SIZE OF A DIME ON THE BACK OF THE CLOCK * THE PANTHER SITS ON A MINT MARBLE BASE * THE DIAL IS EXC. * THE CLOCK STRIKES ON A BELL ON THE HR. AND 1/2 HR.* COMES COMPLETE WITH THE KEY * IT IS A GIANT 19&#34;LONG AND 22&#34; TALL * I WILL SELL IT AS GILTED BRONZE IT WT. IS 37# * IT MAY OR MAY NOT NEED SERVICE AFTER S/H AND IS THEREFORE NOT GUARANTEED TO RUN * AS YOU KNOW CARTIER BUILT BEAUTIFUL CLOCKS * THIS IS NOT JUST A CLOCK IT IS A INVESTMENT * CK. OUR FEEDBACK AND BID ACCORDINGLY ON THIS FINE PC.WITH A VERY LOW MINIMUM AND A VERY REASONABLE RESERVE * * BUYER TO PAY IN FULL INC. S/H AND INS. * I WILL HAVE THIS CLOCK PROFESSIONALLY PACKED * PLAN ON $100.00 * BUYER WILL BE RESPONIBLE FOR FOLLOW UP CLAIM WITH INS. IN THE EVENT IT IS DAMAGED IN TRANSIT * YOU MAY PAY WITH A PER. CK. AND WAIT 10 DAYS FOR S/H OR WE WILL S/H SAME DAY WITH A M.O. Click on a picture to enlarge &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>795.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>795.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 17:51:26</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>colonel46</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 17:51:26</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Antique (Pre-1930)</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>ANTIQUE CLOCK CLOCKS*GILDED BRONZE CARTIER</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044387921">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044387921</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>*YOU ARE BIDDING ON A FINE GILDED BRONZE FRENCH PANTHER SIGNED CARTIER CLOCK * IT IS TITLED PANTHERE EN FURIE * IT IS SIGNED ON THE PANTHER * ON THE BACK OF THE CLOCK IT READS (PATENT MAKE FRANCE) (EDAILLE DOR 1900 PARIS)(SAMUEL MONETI)* THIS INFORMATION IS IN A CIRCLE ABOUT THE SIZE OF A DIME ON THE BACK OF THE CLOCK * THE PANTHER SITS ON A MINT MARBLE BASE * THE DIAL IS EXC. * THE CLOCK STRIKES ON A BELL ON THE HR. AND 1/2 HR.* COMES COMPLETE WITH THE KEY * IT IS A GIANT 19&#34;LONG AND 22&#34; TALL * I WILL SELL IT AS GILTED BRONZE IT WT. IS 37# * IT MAY OR MAY NOT NEED SERVICE AFTER S/H AND IS THEREFORE NOT GUARANTEED TO RUN * AS YOU KNOW CARTIER BUILT BEAUTIFUL CLOCKS * THIS IS NOT JUST A CLOCK IT IS A INVESTMENT * CK. OUR FEEDBACK AND BID ACCORDINGLY ON THIS FINE PC.WITH A VERY LOW MINIMUM AND A VERY REASONABLE RESERVE * * BUYER TO PAY IN FULL INC. S/H AND INS. * I WILL HAVE THIS CLOCK PROFESSIONALLY PACKED * PLAN ON $100.00 * BUYER WILL BE RESPONIBLE FOR FOLLOW UP CLAIM WITH INS. IN THE EVENT IT IS DAMAGED IN TRANSIT * YOU MAY PAY WITH A PER. CK. AND WAIT 10 DAYS FOR S/H OR WE WILL S/H SAME DAY WITH A M.O. Click on a picture to enlarge &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>795.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>795.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 17:51:26</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>colonel46</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 17:51:26</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Clocks</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>ANTIQUE CLOCK CLOCKS*GILDED BRONZE CARTIER</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044387921">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044387921</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>*YOU ARE BIDDING ON A FINE GILDED BRONZE FRENCH PANTHER SIGNED CARTIER CLOCK * IT IS TITLED PANTHERE EN FURIE * IT IS SIGNED ON THE PANTHER * ON THE BACK OF THE CLOCK IT READS (PATENT MAKE FRANCE) (EDAILLE DOR 1900 PARIS)(SAMUEL MONETI)* THIS INFORMATION IS IN A CIRCLE ABOUT THE SIZE OF A DIME ON THE BACK OF THE CLOCK * THE PANTHER SITS ON A MINT MARBLE BASE * THE DIAL IS EXC. * THE CLOCK STRIKES ON A BELL ON THE HR. AND 1/2 HR.* COMES COMPLETE WITH THE KEY * IT IS A GIANT 19&#34;LONG AND 22&#34; TALL * I WILL SELL IT AS GILTED BRONZE IT WT. IS 37# * IT MAY OR MAY NOT NEED SERVICE AFTER S/H AND IS THEREFORE NOT GUARANTEED TO RUN * AS YOU KNOW CARTIER BUILT BEAUTIFUL CLOCKS * THIS IS NOT JUST A CLOCK IT IS A INVESTMENT * CK. OUR FEEDBACK AND BID ACCORDINGLY ON THIS FINE PC.WITH A VERY LOW MINIMUM AND A VERY REASONABLE RESERVE * * BUYER TO PAY IN FULL INC. S/H AND INS. * I WILL HAVE THIS CLOCK PROFESSIONALLY PACKED * PLAN ON $100.00 * BUYER WILL BE RESPONIBLE FOR FOLLOW UP CLAIM WITH INS. IN THE EVENT IT IS DAMAGED IN TRANSIT * YOU MAY PAY WITH A PER. CK. AND WAIT 10 DAYS FOR S/H OR WE WILL S/H SAME DAY WITH A M.O. Click on a picture to enlarge &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>795.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>795.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 17:51:26</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>colonel46</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 17:51:26</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Collectibles</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>ANTIQUE CLOCK CLOCKS*GILDED BRONZE CARTIER</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044387921">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044387921</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>*YOU ARE BIDDING ON A FINE GILDED BRONZE FRENCH PANTHER SIGNED CARTIER CLOCK * IT IS TITLED PANTHERE EN FURIE * IT IS SIGNED ON THE PANTHER * ON THE BACK OF THE CLOCK IT READS (PATENT MAKE FRANCE) (EDAILLE DOR 1900 PARIS)(SAMUEL MONETI)* THIS INFORMATION IS IN A CIRCLE ABOUT THE SIZE OF A DIME ON THE BACK OF THE CLOCK * THE PANTHER SITS ON A MINT MARBLE BASE * THE DIAL IS EXC. * THE CLOCK STRIKES ON A BELL ON THE HR. AND 1/2 HR.* COMES COMPLETE WITH THE KEY * IT IS A GIANT 19&#34;LONG AND 22&#34; TALL * I WILL SELL IT AS GILTED BRONZE IT WT. IS 37# * IT MAY OR MAY NOT NEED SERVICE AFTER S/H AND IS THEREFORE NOT GUARANTEED TO RUN * AS YOU KNOW CARTIER BUILT BEAUTIFUL CLOCKS * THIS IS NOT JUST A CLOCK IT IS A INVESTMENT * CK. OUR FEEDBACK AND BID ACCORDINGLY ON THIS FINE PC.WITH A VERY LOW MINIMUM AND A VERY REASONABLE RESERVE * * BUYER TO PAY IN FULL INC. S/H AND INS. * I WILL HAVE THIS CLOCK PROFESSIONALLY PACKED * PLAN ON $100.00 * BUYER WILL BE RESPONIBLE FOR FOLLOW UP CLAIM WITH INS. IN THE EVENT IT IS DAMAGED IN TRANSIT * YOU MAY PAY WITH A PER. CK. AND WAIT 10 DAYS FOR S/H OR WE WILL S/H SAME DAY WITH A M.O. Click on a picture to enlarge &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>795.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>795.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 17:51:26</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>colonel46</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 17:51:26</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Furnishings, Knives &amp; Tools</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>ANTIQUE CLOCK CLOCKS*GILDED BRONZE CARTIER</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044387921">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044387921</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>*YOU ARE BIDDING ON A FINE GILDED BRONZE FRENCH PANTHER SIGNED CARTIER CLOCK * IT IS TITLED PANTHERE EN FURIE * IT IS SIGNED ON THE PANTHER * ON THE BACK OF THE CLOCK IT READS (PATENT MAKE FRANCE) (EDAILLE DOR 1900 PARIS)(SAMUEL MONETI)* THIS INFORMATION IS IN A CIRCLE ABOUT THE SIZE OF A DIME ON THE BACK OF THE CLOCK * THE PANTHER SITS ON A MINT MARBLE BASE * THE DIAL IS EXC. * THE CLOCK STRIKES ON A BELL ON THE HR. AND 1/2 HR.* COMES COMPLETE WITH THE KEY * IT IS A GIANT 19&#34;LONG AND 22&#34; TALL * I WILL SELL IT AS GILTED BRONZE IT WT. IS 37# * IT MAY OR MAY NOT NEED SERVICE AFTER S/H AND IS THEREFORE NOT GUARANTEED TO RUN * AS YOU KNOW CARTIER BUILT BEAUTIFUL CLOCKS * THIS IS NOT JUST A CLOCK IT IS A INVESTMENT * CK. OUR FEEDBACK AND BID ACCORDINGLY ON THIS FINE PC.WITH A VERY LOW MINIMUM AND A VERY REASONABLE RESERVE * * BUYER TO PAY IN FULL INC. S/H AND INS. * I WILL HAVE THIS CLOCK PROFESSIONALLY PACKED * PLAN ON $100.00 * BUYER WILL BE RESPONIBLE FOR FOLLOW UP CLAIM WITH INS. IN THE EVENT IT IS DAMAGED IN TRANSIT * YOU MAY PAY WITH A PER. CK. AND WAIT 10 DAYS FOR S/H OR WE WILL S/H SAME DAY WITH A M.O. Click on a picture to enlarge &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture &#39;) //-- Supersize Picture Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>795.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>795.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 17:51:26</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>colonel46</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 17:51:26</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Shelf</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>ANTIQUE CLOCK CLOCKS*GILDED BRONZE CARTIER</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044407002">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044407002</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>LLADRO # 7644: INNOCENCE in BLOOM - from my own PERSONAL COLLECTION - is a MAGNIFICENT &amp; MINT RETIRED LLadro porcelain figurine standing 9.50 inches tall. This figurine has the blue LLadro logo and flower on its base and comes in it&#39;s ORIGINAL LLadro box. It was first made in 1996 and was RETIRED in 1996, making it available for that one year only, as LLadro&#39;s Annual Club Figurine. It sells on the LLadro web sites for $350. NOTE: Each and every flower is perfect, hard to find this way - it is in PRISTINE condition. It&#39;s worth every bit of that price, it&#39;s a real gem. Win this auction and get it at a fraction of that cost. High bidder to pay by Postal Money Order and ADD $20 for fragile shipping and insurance. WILL BE MAILED IN TIME FOR THE HOLIDAYS + PLUS + FREE GIFT: EBAY ITEM # 1044400095, WILL BE YOURS FREE IF YOU ARE THE HIGH BIDDER ON THIS AUCTION. Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>199.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>199.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 18:14:38</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>mitchelladro@aol.com</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 18:14:38</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Collectibles</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>LLADRO #7644: INNOCENCE in BLOOM (mint in box</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044407002">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044407002</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>LLADRO # 7644: INNOCENCE in BLOOM - from my own PERSONAL COLLECTION - is a MAGNIFICENT &amp; MINT RETIRED LLadro porcelain figurine standing 9.50 inches tall. This figurine has the blue LLadro logo and flower on its base and comes in it&#39;s ORIGINAL LLadro box. It was first made in 1996 and was RETIRED in 1996, making it available for that one year only, as LLadro&#39;s Annual Club Figurine. It sells on the LLadro web sites for $350. NOTE: Each and every flower is perfect, hard to find this way - it is in PRISTINE condition. It&#39;s worth every bit of that price, it&#39;s a real gem. Win this auction and get it at a fraction of that cost. High bidder to pay by Postal Money Order and ADD $20 for fragile shipping and insurance. WILL BE MAILED IN TIME FOR THE HOLIDAYS + PLUS + FREE GIFT: EBAY ITEM # 1044400095, WILL BE YOURS FREE IF YOU ARE THE HIGH BIDDER ON THIS AUCTION. Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>199.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>199.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 18:14:38</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>mitchelladro@aol.com</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 18:14:38</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Decorative &amp; Holiday</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>LLADRO #7644: INNOCENCE in BLOOM (mint in box</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044407002">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044407002</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>LLADRO # 7644: INNOCENCE in BLOOM - from my own PERSONAL COLLECTION - is a MAGNIFICENT &amp; MINT RETIRED LLadro porcelain figurine standing 9.50 inches tall. This figurine has the blue LLadro logo and flower on its base and comes in it&#39;s ORIGINAL LLadro box. It was first made in 1996 and was RETIRED in 1996, making it available for that one year only, as LLadro&#39;s Annual Club Figurine. It sells on the LLadro web sites for $350. NOTE: Each and every flower is perfect, hard to find this way - it is in PRISTINE condition. It&#39;s worth every bit of that price, it&#39;s a real gem. Win this auction and get it at a fraction of that cost. High bidder to pay by Postal Money Order and ADD $20 for fragile shipping and insurance. WILL BE MAILED IN TIME FOR THE HOLIDAYS + PLUS + FREE GIFT: EBAY ITEM # 1044400095, WILL BE YOURS FREE IF YOU ARE THE HIGH BIDDER ON THIS AUCTION. Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>199.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>199.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 18:14:38</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>mitchelladro@aol.com</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 18:14:38</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Decorative by Brand</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>LLADRO #7644: INNOCENCE in BLOOM (mint in box</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044407002">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044407002</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>LLADRO # 7644: INNOCENCE in BLOOM - from my own PERSONAL COLLECTION - is a MAGNIFICENT &amp; MINT RETIRED LLadro porcelain figurine standing 9.50 inches tall. This figurine has the blue LLadro logo and flower on its base and comes in it&#39;s ORIGINAL LLadro box. It was first made in 1996 and was RETIRED in 1996, making it available for that one year only, as LLadro&#39;s Annual Club Figurine. It sells on the LLadro web sites for $350. NOTE: Each and every flower is perfect, hard to find this way - it is in PRISTINE condition. It&#39;s worth every bit of that price, it&#39;s a real gem. Win this auction and get it at a fraction of that cost. High bidder to pay by Postal Money Order and ADD $20 for fragile shipping and insurance. WILL BE MAILED IN TIME FOR THE HOLIDAYS + PLUS + FREE GIFT: EBAY ITEM # 1044400095, WILL BE YOURS FREE IF YOU ARE THE HIGH BIDDER ON THIS AUCTION. Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>199.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>199.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 18:14:38</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>mitchelladro@aol.com</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 18:14:38</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Figurines</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>LLADRO #7644: INNOCENCE in BLOOM (mint in box</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044407002">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044407002</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>LLADRO # 7644: INNOCENCE in BLOOM - from my own PERSONAL COLLECTION - is a MAGNIFICENT &amp; MINT RETIRED LLadro porcelain figurine standing 9.50 inches tall. This figurine has the blue LLadro logo and flower on its base and comes in it&#39;s ORIGINAL LLadro box. It was first made in 1996 and was RETIRED in 1996, making it available for that one year only, as LLadro&#39;s Annual Club Figurine. It sells on the LLadro web sites for $350. NOTE: Each and every flower is perfect, hard to find this way - it is in PRISTINE condition. It&#39;s worth every bit of that price, it&#39;s a real gem. Win this auction and get it at a fraction of that cost. High bidder to pay by Postal Money Order and ADD $20 for fragile shipping and insurance. WILL BE MAILED IN TIME FOR THE HOLIDAYS + PLUS + FREE GIFT: EBAY ITEM # 1044400095, WILL BE YOURS FREE IF YOU ARE THE HIGH BIDDER ON THIS AUCTION. Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>199.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>199.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 18:14:38</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>mitchelladro@aol.com</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 18:14:38</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Lladro</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>LLADRO #7644: INNOCENCE in BLOOM (mint in box</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044412792">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044412792</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>YOU GET 18 OLD PINT CLEAR GLASS CANNING JARS WITH GLASS LIDS AND WIRE CLOSURE FOR ONE PRICE this equals one lot. I THINK ALL OF THESE ARE BALL AND ATLAS. buyer pays $15.50 shipping in continental U.S. all others pay quoted shipping to their location, this includes APO&#39;s. We do not ship thru USPS. Please see all our other deals for dealers. CLICK ON SELLER&#39;S OTHER AUCTIONS. **18-#373reg** Free Honesty Counters powered by Andale! Visit Mathews Wire Inc today! Payment Details U.S. Shipping and Handling $15.50 Shipping Insurance per item - Sales Tax (none) _ Learn more about checkout Payment Instructions Satisfaction guaranteed.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>15.5</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 18:21:35</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>mwire</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 18:21:35</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>34.29</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Bottles: Antique (Pre-1900)</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>18 Old pt fruit jars, glass lids&amp;wire closure</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>7</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044412792">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044412792</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>YOU GET 18 OLD PINT CLEAR GLASS CANNING JARS WITH GLASS LIDS AND WIRE CLOSURE FOR ONE PRICE this equals one lot. I THINK ALL OF THESE ARE BALL AND ATLAS. buyer pays $15.50 shipping in continental U.S. all others pay quoted shipping to their location, this includes APO&#39;s. We do not ship thru USPS. Please see all our other deals for dealers. CLICK ON SELLER&#39;S OTHER AUCTIONS. **18-#373reg** Free Honesty Counters powered by Andale! Visit Mathews Wire Inc today! Payment Details U.S. Shipping and Handling $15.50 Shipping Insurance per item - Sales Tax (none) _ Learn more about checkout Payment Instructions Satisfaction guaranteed.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>15.5</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 18:21:35</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>mwire</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 18:21:35</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>34.29</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Collectibles</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>18 Old pt fruit jars, glass lids&amp;wire closure</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>7</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044412792">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044412792</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>YOU GET 18 OLD PINT CLEAR GLASS CANNING JARS WITH GLASS LIDS AND WIRE CLOSURE FOR ONE PRICE this equals one lot. I THINK ALL OF THESE ARE BALL AND ATLAS. buyer pays $15.50 shipping in continental U.S. all others pay quoted shipping to their location, this includes APO&#39;s. We do not ship thru USPS. Please see all our other deals for dealers. CLICK ON SELLER&#39;S OTHER AUCTIONS. **18-#373reg** Free Honesty Counters powered by Andale! Visit Mathews Wire Inc today! Payment Details U.S. Shipping and Handling $15.50 Shipping Insurance per item - Sales Tax (none) _ Learn more about checkout Payment Instructions Satisfaction guaranteed.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>15.5</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 18:21:35</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>mwire</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 18:21:35</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>34.29</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Fruit Jars</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>18 Old pt fruit jars, glass lids&amp;wire closure</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>7</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044412792">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044412792</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>YOU GET 18 OLD PINT CLEAR GLASS CANNING JARS WITH GLASS LIDS AND WIRE CLOSURE FOR ONE PRICE this equals one lot. I THINK ALL OF THESE ARE BALL AND ATLAS. buyer pays $15.50 shipping in continental U.S. all others pay quoted shipping to their location, this includes APO&#39;s. We do not ship thru USPS. Please see all our other deals for dealers. CLICK ON SELLER&#39;S OTHER AUCTIONS. **18-#373reg** Free Honesty Counters powered by Andale! Visit Mathews Wire Inc today! Payment Details U.S. Shipping and Handling $15.50 Shipping Insurance per item - Sales Tax (none) _ Learn more about checkout Payment Instructions Satisfaction guaranteed.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>15.5</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 18:21:35</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>mwire</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 18:21:35</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>34.29</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Housewares &amp; Kitchenware</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>18 Old pt fruit jars, glass lids&amp;wire closure</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>7</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044458000">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044458000</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>beautiful well cared for santa claus from department 56. this charming santa claus stands approximately 14_ tall and is 9_ wide. the piece has a matte finish that is not glossy and he carries a belt full on jingle bells. this piece would go nicely with the snowman and christmas tree which are all up for auction right now. PLEASE READ CAREFULLY!!!! payment by cashier&#39;s check, money order, or personal check. personal checks must clear before shipping. the hold period will be a minimum of 14 days. I ship with UPS and the buyer is responsible for shipping charges. the shipping rate is dependent on both the weight of the package and the distance that package will travel. the minimum shipping/handling charge is $6 and will increase with distance and weight. shipment will occur within 2 to 5 days after the deposit of funds. a $2 surcharge will apply for all USPS shipments if you cannot have or do not want ups service. If you are in need of rush shipping, please let me know and I_will furnish quotes on availability. the BUY-IT-NOW price includes free domestic shipping (international winners and residents of alaska and hawaii receive a credit of like value applied towards their total) and, as an added convenience, you can pay with paypal if you utilize the feature. paypal is not accepted if you win the auction during the course of the regular bidding-I only accept paypal if the buy it now feature is utilized. thank you for your understanding and good luck! Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>24.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>24.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 19:10:12</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>rulabula</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 19:10:12</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Collectibles</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>department 56 ceramic santa claus</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044458000">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044458000</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>beautiful well cared for santa claus from department 56. this charming santa claus stands approximately 14_ tall and is 9_ wide. the piece has a matte finish that is not glossy and he carries a belt full on jingle bells. this piece would go nicely with the snowman and christmas tree which are all up for auction right now. PLEASE READ CAREFULLY!!!! payment by cashier&#39;s check, money order, or personal check. personal checks must clear before shipping. the hold period will be a minimum of 14 days. I ship with UPS and the buyer is responsible for shipping charges. the shipping rate is dependent on both the weight of the package and the distance that package will travel. the minimum shipping/handling charge is $6 and will increase with distance and weight. shipment will occur within 2 to 5 days after the deposit of funds. a $2 surcharge will apply for all USPS shipments if you cannot have or do not want ups service. If you are in need of rush shipping, please let me know and I_will furnish quotes on availability. the BUY-IT-NOW price includes free domestic shipping (international winners and residents of alaska and hawaii receive a credit of like value applied towards their total) and, as an added convenience, you can pay with paypal if you utilize the feature. paypal is not accepted if you win the auction during the course of the regular bidding-I only accept paypal if the buy it now feature is utilized. thank you for your understanding and good luck! Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>24.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>24.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 19:10:12</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>rulabula</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 19:10:12</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Decorative &amp; Holiday</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>department 56 ceramic santa claus</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044458000">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044458000</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>beautiful well cared for santa claus from department 56. this charming santa claus stands approximately 14_ tall and is 9_ wide. the piece has a matte finish that is not glossy and he carries a belt full on jingle bells. this piece would go nicely with the snowman and christmas tree which are all up for auction right now. PLEASE READ CAREFULLY!!!! payment by cashier&#39;s check, money order, or personal check. personal checks must clear before shipping. the hold period will be a minimum of 14 days. I ship with UPS and the buyer is responsible for shipping charges. the shipping rate is dependent on both the weight of the package and the distance that package will travel. the minimum shipping/handling charge is $6 and will increase with distance and weight. shipment will occur within 2 to 5 days after the deposit of funds. a $2 surcharge will apply for all USPS shipments if you cannot have or do not want ups service. If you are in need of rush shipping, please let me know and I_will furnish quotes on availability. the BUY-IT-NOW price includes free domestic shipping (international winners and residents of alaska and hawaii receive a credit of like value applied towards their total) and, as an added convenience, you can pay with paypal if you utilize the feature. paypal is not accepted if you win the auction during the course of the regular bidding-I only accept paypal if the buy it now feature is utilized. thank you for your understanding and good luck! Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>24.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>24.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 19:10:12</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>rulabula</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 19:10:12</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Decorative by Brand</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>department 56 ceramic santa claus</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044458000">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044458000</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>beautiful well cared for santa claus from department 56. this charming santa claus stands approximately 14_ tall and is 9_ wide. the piece has a matte finish that is not glossy and he carries a belt full on jingle bells. this piece would go nicely with the snowman and christmas tree which are all up for auction right now. PLEASE READ CAREFULLY!!!! payment by cashier&#39;s check, money order, or personal check. personal checks must clear before shipping. the hold period will be a minimum of 14 days. I ship with UPS and the buyer is responsible for shipping charges. the shipping rate is dependent on both the weight of the package and the distance that package will travel. the minimum shipping/handling charge is $6 and will increase with distance and weight. shipment will occur within 2 to 5 days after the deposit of funds. a $2 surcharge will apply for all USPS shipments if you cannot have or do not want ups service. If you are in need of rush shipping, please let me know and I_will furnish quotes on availability. the BUY-IT-NOW price includes free domestic shipping (international winners and residents of alaska and hawaii receive a credit of like value applied towards their total) and, as an added convenience, you can pay with paypal if you utilize the feature. paypal is not accepted if you win the auction during the course of the regular bidding-I only accept paypal if the buy it now feature is utilized. thank you for your understanding and good luck! Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>24.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>24.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 19:10:12</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>rulabula</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 19:10:12</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Dept 56</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>department 56 ceramic santa claus</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044458000">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044458000</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>beautiful well cared for santa claus from department 56. this charming santa claus stands approximately 14_ tall and is 9_ wide. the piece has a matte finish that is not glossy and he carries a belt full on jingle bells. this piece would go nicely with the snowman and christmas tree which are all up for auction right now. PLEASE READ CAREFULLY!!!! payment by cashier&#39;s check, money order, or personal check. personal checks must clear before shipping. the hold period will be a minimum of 14 days. I ship with UPS and the buyer is responsible for shipping charges. the shipping rate is dependent on both the weight of the package and the distance that package will travel. the minimum shipping/handling charge is $6 and will increase with distance and weight. shipment will occur within 2 to 5 days after the deposit of funds. a $2 surcharge will apply for all USPS shipments if you cannot have or do not want ups service. If you are in need of rush shipping, please let me know and I_will furnish quotes on availability. the BUY-IT-NOW price includes free domestic shipping (international winners and residents of alaska and hawaii receive a credit of like value applied towards their total) and, as an added convenience, you can pay with paypal if you utilize the feature. paypal is not accepted if you win the auction during the course of the regular bidding-I only accept paypal if the buy it now feature is utilized. thank you for your understanding and good luck! Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>24.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>24.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 19:10:12</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>rulabula</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 19:10:12</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Other Dept 56 Items</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>department 56 ceramic santa claus</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044521948">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044521948</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>This auction is for a 1981 Family Tree Photoholder ornament # QX515-3. It is Beautiful, it is in the shape of a Christmas tree and the photo goes in the middle. It has never been used, it is mint. The box in good condition with the following exceptions. The box has no price tag, There us a small rip on the front left bottom side adn a smaller one the same side top. There is a small crease on the right side. Any other questions please emailme *BEFORE* auction ends. Winning bidder to pay shipping and insurance, within 7 days of auctions end. Payment is accpeted in theofrom of Paypal, BIDPay or US $ MOney order only. NO PERSONAL CHECKS. Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>6.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>6.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 20:31:00</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>711jmj</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 20:31:00</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Collectibles</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1981 Hallmark Family Tree Ornament - MINT</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044521948">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044521948</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>This auction is for a 1981 Family Tree Photoholder ornament # QX515-3. It is Beautiful, it is in the shape of a Christmas tree and the photo goes in the middle. It has never been used, it is mint. The box in good condition with the following exceptions. The box has no price tag, There us a small rip on the front left bottom side adn a smaller one the same side top. There is a small crease on the right side. Any other questions please emailme *BEFORE* auction ends. Winning bidder to pay shipping and insurance, within 7 days of auctions end. Payment is accpeted in theofrom of Paypal, BIDPay or US $ MOney order only. NO PERSONAL CHECKS. Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>6.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>6.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 20:31:00</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>711jmj</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 20:31:00</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Decorative &amp; Holiday</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1981 Hallmark Family Tree Ornament - MINT</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044521948">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044521948</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>This auction is for a 1981 Family Tree Photoholder ornament # QX515-3. It is Beautiful, it is in the shape of a Christmas tree and the photo goes in the middle. It has never been used, it is mint. The box in good condition with the following exceptions. The box has no price tag, There us a small rip on the front left bottom side adn a smaller one the same side top. There is a small crease on the right side. Any other questions please emailme *BEFORE* auction ends. Winning bidder to pay shipping and insurance, within 7 days of auctions end. Payment is accpeted in theofrom of Paypal, BIDPay or US $ MOney order only. NO PERSONAL CHECKS. Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>6.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>6.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 20:31:00</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>711jmj</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 20:31:00</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Decorative by Brand</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1981 Hallmark Family Tree Ornament - MINT</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044521948">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044521948</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>This auction is for a 1981 Family Tree Photoholder ornament # QX515-3. It is Beautiful, it is in the shape of a Christmas tree and the photo goes in the middle. It has never been used, it is mint. The box in good condition with the following exceptions. The box has no price tag, There us a small rip on the front left bottom side adn a smaller one the same side top. There is a small crease on the right side. Any other questions please emailme *BEFORE* auction ends. Winning bidder to pay shipping and insurance, within 7 days of auctions end. Payment is accpeted in theofrom of Paypal, BIDPay or US $ MOney order only. NO PERSONAL CHECKS. Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>6.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>6.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 20:31:00</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>711jmj</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 20:31:00</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Hallmark</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1981 Hallmark Family Tree Ornament - MINT</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1044521948">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1044521948</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>This auction is for a 1981 Family Tree Photoholder ornament # QX515-3. It is Beautiful, it is in the shape of a Christmas tree and the photo goes in the middle. It has never been used, it is mint. The box in good condition with the following exceptions. The box has no price tag, There us a small rip on the front left bottom side adn a smaller one the same side top. There is a small crease on the right side. Any other questions please emailme *BEFORE* auction ends. Winning bidder to pay shipping and insurance, within 7 days of auctions end. Payment is accpeted in theofrom of Paypal, BIDPay or US $ MOney order only. NO PERSONAL CHECKS. Free Honesty Counters powered by Andale! Payment Details See item description and Payment Instructions, or contact seller for more information. Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>6.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>6.99</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-05 20:31:00</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>711jmj</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-15 20:31:00</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Ornaments</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1981 Hallmark Family Tree Ornament - MINT</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1048723305">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1048723305</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>This is it! The last week I&#39;ll be listing books on ebay until after the new year. check daily for new listings, all $1.00 &amp; no reserve. Thanks. This auction is for Amazing spider-Man Annual 12 from 1978 in VERY FINE+++. Spider-Man vs the Hulk! Reprints issues 119 &amp; 120 of Amazing Spider-man. A great high grade copy. I accept Paypal &amp; postal money orders only. Shipping for this book is $3.50 priority. Insurance is optional, add $1.10. NO INTERNATIONAL BIDDERS PLEASE! Non paying bidders will receive negative feedback. Thanks &amp; as always, HAVE FUN!!! Free Honesty Counters powered by Andale! Payment Details U.S. Shipping and Handling $3.50 Shipping Insurance per item (optional) $1.10 Sales Tax (0.000% if shipped to none) _ Learn more about checkout Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 17:59:03</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>bluesugarmonkey</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-21 17:59:03</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Bronze Age (1970-79)</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>AMAZING SPIDER-MAN ANNUAL 12 1978 VF+++</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1048723305">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1048723305</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>This is it! The last week I&#39;ll be listing books on ebay until after the new year. check daily for new listings, all $1.00 &amp; no reserve. Thanks. This auction is for Amazing spider-Man Annual 12 from 1978 in VERY FINE+++. Spider-Man vs the Hulk! Reprints issues 119 &amp; 120 of Amazing Spider-man. A great high grade copy. I accept Paypal &amp; postal money orders only. Shipping for this book is $3.50 priority. Insurance is optional, add $1.10. NO INTERNATIONAL BIDDERS PLEASE! Non paying bidders will receive negative feedback. Thanks &amp; as always, HAVE FUN!!! Free Honesty Counters powered by Andale! Payment Details U.S. Shipping and Handling $3.50 Shipping Insurance per item (optional) $1.10 Sales Tax (0.000% if shipped to none) _ Learn more about checkout Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 17:59:03</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>bluesugarmonkey</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-21 17:59:03</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Collectibles</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>AMAZING SPIDER-MAN ANNUAL 12 1978 VF+++</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1048723305">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1048723305</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>This is it! The last week I&#39;ll be listing books on ebay until after the new year. check daily for new listings, all $1.00 &amp; no reserve. Thanks. This auction is for Amazing spider-Man Annual 12 from 1978 in VERY FINE+++. Spider-Man vs the Hulk! Reprints issues 119 &amp; 120 of Amazing Spider-man. A great high grade copy. I accept Paypal &amp; postal money orders only. Shipping for this book is $3.50 priority. Insurance is optional, add $1.10. NO INTERNATIONAL BIDDERS PLEASE! Non paying bidders will receive negative feedback. Thanks &amp; as always, HAVE FUN!!! Free Honesty Counters powered by Andale! Payment Details U.S. Shipping and Handling $3.50 Shipping Insurance per item (optional) $1.10 Sales Tax (0.000% if shipped to none) _ Learn more about checkout Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 17:59:03</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>bluesugarmonkey</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-21 17:59:03</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Comics</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>AMAZING SPIDER-MAN ANNUAL 12 1978 VF+++</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1048723305">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1048723305</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>This is it! The last week I&#39;ll be listing books on ebay until after the new year. check daily for new listings, all $1.00 &amp; no reserve. Thanks. This auction is for Amazing spider-Man Annual 12 from 1978 in VERY FINE+++. Spider-Man vs the Hulk! Reprints issues 119 &amp; 120 of Amazing Spider-man. A great high grade copy. I accept Paypal &amp; postal money orders only. Shipping for this book is $3.50 priority. Insurance is optional, add $1.10. NO INTERNATIONAL BIDDERS PLEASE! Non paying bidders will receive negative feedback. Thanks &amp; as always, HAVE FUN!!! Free Honesty Counters powered by Andale! Payment Details U.S. Shipping and Handling $3.50 Shipping Insurance per item (optional) $1.10 Sales Tax (0.000% if shipped to none) _ Learn more about checkout Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 17:59:03</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>bluesugarmonkey</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-21 17:59:03</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Pop Culture</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>AMAZING SPIDER-MAN ANNUAL 12 1978 VF+++</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+	<a href="http://localhost:14500/view?itemID=1048723305">MoreInfo</a>
+	
+		<div>
+			<span>itemId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1048723305</span>
+
+		</div>
+  	
+		<div>
+			<span>itemDescript</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>This is it! The last week I&#39;ll be listing books on ebay until after the new year. check daily for new listings, all $1.00 &amp; no reserve. Thanks. This auction is for Amazing spider-Man Annual 12 from 1978 in VERY FINE+++. Spider-Man vs the Hulk! Reprints issues 119 &amp; 120 of Amazing Spider-man. A great high grade copy. I accept Paypal &amp; postal money orders only. Shipping for this book is $3.50 priority. Insurance is optional, add $1.10. NO INTERNATIONAL BIDDERS PLEASE! Non paying bidders will receive negative feedback. Thanks &amp; as always, HAVE FUN!!! Free Honesty Counters powered by Andale! Payment Details U.S. Shipping and Handling $3.50 Shipping Insurance per item (optional) $1.10 Sales Tax (0.000% if shipped to none) _ Learn more about checkout Payment Instructions See item description or contact seller for more information.</span>
+
+		</div>
+  	
+		<div>
+			<span>priceFirstBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceCurrent</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>1.0</span>
+
+		</div>
+  	
+		<div>
+			<span>priceStart</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-14 17:59:03</span>
+
+		</div>
+  	
+		<div>
+			<span>sellUserId</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>bluesugarmonkey</span>
+
+		</div>
+  	
+		<div>
+			<span>priceEnd</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>2001-12-21 17:59:03</span>
+
+		</div>
+  	
+		<div>
+			<span>Buy_Price</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>None</span>
+
+		</div>
+  	
+		<div>
+			<span>category</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>Superhero</span>
+
+		</div>
+  	
+		<div>
+			<span>itemName</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>AMAZING SPIDER-MAN ANNUAL 12 1978 VF+++</span>
+
+		</div>
+  	
+		<div>
+			<span>priceNumberBid</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<span>0</span>
+
+		</div>
+  	
+  	<div>--------</div>
+
+
+</ul>
+</div>
+  </div></div>
+</body>
+</html>

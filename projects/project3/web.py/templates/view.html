@@ -1,0 +1,70 @@
+{% extends "app_base.html" %}
+{% block content %}
+<h3>Result</h3>
+<ul>
+{% if item_info %}
+<span><span>Item Name: </span> {{ item_info['itemName']}}</span>
+<div>--------</div>
+<span><span>Item ID: </span> {{ item_info['itemId']}}</span>
+<div>--------</div>
+<span><span>Item Description: </span> {{ item_info['itemDescript']}}</span>
+<div>--------</div>
+{% else %}
+<div>No results</div>
+{% endif %}
+</ul>
+<h5>Bidder Info:</h5>
+<ul>
+{% if bidder_info %}
+	{%if bidder_info == "No bids"%}
+	
+	{% else %}
+	{% for result in bidder_info %}
+		{% for key in result %}
+			<div>
+				<span>{{ key|e }}</span>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span>{{ result[key]|e }}</span>
+			</div>
+	  	{% endfor %}
+	  	<div>--------</div>
+	{% endfor %}
+	{% endif %}
+
+{% else %}
+<div>No results</div>
+{% endif %}
+</ul>
+<ul>
+{% if status %}
+
+<span><span>Status: </span> {{status}}</span>
+<div>--------</div>
+
+{% else %}
+<div>No results</div>
+{% endif %}
+</ul>
+<h5>Categories of the Item:</h5>
+<ul>
+{% if category[1] %}
+{% for result in category[1] %}
+	{% for key in result %}
+		<div>
+			<span>{{ key|e }}</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<span>{{ result[key]|e }}</span>
+		</div>
+  	{% endfor %}
+  	<div>--------</div>
+{% endfor %}
+{% else %}
+<div>No results</div>
+{% endif %}
+</ul>
+
+
+
+
+</ul>
+{% endblock %}
